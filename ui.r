@@ -1,0 +1,61 @@
+library(shiny)
+
+shinyUI(fluidPage(
+  
+  #title
+  titlePanel("EasieR Stats"),
+  
+  #main
+  sidebarLayout(
+    
+    
+    sidebarPanel(
+      conditionalPanel(condition = "input.selectCategory=='Economic'",
+        selectInput("econVariable", "Select Variable",
+          c("Median Income", "Poverty Status", "Food Stamp", "Employment")
+        )
+      ),
+      
+      conditionalPanel(condition = "input.selectCategory=='Housing'",
+        selectInput("houseVariable", "Select Variable",
+          c("Median Rent", "Occupancy Rates")            
+        )
+      ),
+      
+      conditionalPanel(condition = "input.selectCategory=='People'",
+        selectInput("peopleVariable", "Select Variable",
+          c("Age")            
+        )
+      ),
+      
+      conditionalPanel(condition = "input.selectCategory=='Education'",
+        selectInput("eduVariable", "Select Variable",
+          c("Education Attainment")      
+        )
+      ),
+      
+      conditionalPanel(condition = "input.selectCategory=='Healthcare'",
+        selectInput("healthVariable", "Select Variable",
+          c("Healthcare Coverage")            
+        )
+      )
+      
+    #//sidebarPanel  
+    ),
+    
+    mainPanel(
+      tabsetPanel(id="selectCategory",
+        tabPanel("Economic"),
+        tabPanel("Housing"),
+        tabPanel("People"),
+        tabPanel("Education"),
+        tabPanel("Healthcare")
+      )
+    
+    #//mainPanel
+    )
+    
+  #//sidebarLayout
+  )
+))
+

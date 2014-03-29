@@ -1,0 +1,8 @@
+Stat 585 - Project Proposal
+========================================================
+
+The Census Bureau has an interactive tool called [Easy Stats](http://www.census.gov/easystats/) which gives access to selected statistics collected by the American Community Survey.  Currently Easy Stats only returns a data table for selected various for a specific state.  Easy Stats does not provide any graphical summaries and only allows viewing one state or county at a time.  It is difficult to compare locations.
+
+We will use the shiny package to provide graphical summaries for selected demographic variables using choropleth maps.  We will also make it easy to compare the variables between states.  We plan on looking at state level demographic variables including median income, poverty status, food stamp rates, employment rates, rent prices, age, healthcare coverage and highest education attained.  We will rank states based on those demographic variables and make it easy to see which states have higher income, education etc.
+
+The data we will be working with is most likely the 5-year 2008-2012 American Community Survey data.  This data aggregates information over the 5 years.  We originally wanted to look at 2008-2012 separately year-by-year in order to compare changes over time but the Census Bureau does not provide data in such a format.  The Census Bureau has also recently released time series economic indicator data on a select number of variables and we will consider including some of these in our shiny app as well.  Some possible variables of interest include quarterly retail sales, housing construction and sales data and housing vacancy rates.
