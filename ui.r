@@ -11,31 +11,31 @@ shinyUI(fluidPage(
     
     sidebarPanel(
       conditionalPanel(condition = "input.selectCategory=='Economic'",
-        selectInput("econVariable", "Select Variable",
+        selectInput("econVariable", "Economic Variables",
           c("Median Income", "Poverty Status", "Food Stamp", "Employment")
         )
       ),
       
       conditionalPanel(condition = "input.selectCategory=='Housing'",
-        selectInput("houseVariable", "Select Variable",
+        selectInput("houseVariable", "Housing Variables",
           c("Median Rent", "Occupancy Rates")            
         )
       ),
       
       conditionalPanel(condition = "input.selectCategory=='People'",
-        selectInput("peopleVariable", "Select Variable",
+        selectInput("peopleVariable", "Demographic Variables",
           c("Age")            
         )
       ),
       
       conditionalPanel(condition = "input.selectCategory=='Education'",
-        selectInput("eduVariable", "Select Variable",
+        selectInput("eduVariable", "Education Variables",
           c("Education Attainment")      
         )
       ),
       
       conditionalPanel(condition = "input.selectCategory=='Healthcare'",
-        selectInput("healthVariable", "Select Variable",
+        selectInput("healthVariable", "Healthcare Variables",
           c("Healthcare Coverage")            
         )
       )
