@@ -39,4 +39,7 @@ age.melt = melt(age.df, id='state')
 cols = ldply(strsplit(as.character(age.melt$variable), "\\.\\."))
 names(cols) = c("gender", "age")
 age.df2 = data.frame(state = age.melt$state, gender = cols$gender, age = cols$age, freq = age.melt$value)
+age.df2$age = factor(age.df2$age, levels(age.df2$age)[c(23, 12, 1:11, 13:22)])
 
+
+qplot(age, freq, data=subset(age.df2, state=="Alaska")) + coord_flip()
