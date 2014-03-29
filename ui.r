@@ -24,13 +24,13 @@ shinyUI(fluidPage(
       
       conditionalPanel(condition = "input.selectCategory=='People'",
         selectInput("peopleVariable", "Demographic Variables",
-          c("Age")            
+          c("Age", "Race")            
         )
       ),
       
       conditionalPanel(condition = "input.selectCategory=='Education'",
         selectInput("eduVariable", "Education Variables",
-          c("Education Attainment")      
+          c("Education Attainment", "Field of Degree")      
         )
       ),
       
