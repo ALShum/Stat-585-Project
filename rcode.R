@@ -10,10 +10,13 @@ states = geo.make(state = "*")
 #B23001 - Sex by Age by Employment Status for the Population 16 Years and over
 #B01001 - 
 #B22005(A-H) - Receipt of Food Stamps/SNAP in the Past 12 Months by Race of Householder
-#C23002(A-H) - Sex by Age by Employment Status for the Population 16 Years and Over
+
+#TODO
 #B14007(A-H) - School Enrollment by Level of School for the Population 3 Years and Over
 #B17001(A-H) - POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE
 
+#optional
+#C23002(A-H) - Sex by Age by Employment Status for the Population 16 Years and Over (race)
 search_terms = acs.lookup(endyear = 2012, span = 5, dataset = "acs", 
                           table.name="race", case.sensitive = F)
 search_terms@results[,c(3)]
