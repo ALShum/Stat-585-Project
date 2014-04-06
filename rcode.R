@@ -21,9 +21,7 @@ search_terms@results[33:39,]
 median = acs.fetch(endyear = 2012, span = 5, geography = states, 
                    table.number = "B19326", col.names="pretty")
 median.df = data.frame(median@estimate)
-names(median.df) = gsub("Median.Income.by.Sex.by.Work.Experience.for.the.Populatio
-                        n.15..Years..Median.income.in.the.past.12.months..in.2012.i
-                        nflation.adjusted.dollars.....", "", names(median.df))
+names(median.df) = gsub("Median.Income.by.Sex.by.Work.Experience.for.the.Population.15..Years..Median.income.in.the.past.12.months..in.2012.inflation.adjusted.dollars.....", "", names(median.df))
 names(median.df) = c('total','male_total','male_full','male_other',
                         'female_total','female_full','female_other')
 median.df$state = factor(rownames(median.df))
@@ -42,8 +40,7 @@ search_terms = acs.lookup(endyear = 2012, span = 5, dataset = "acs",
 employ = acs.fetch(endyear = 2012, span = 5, geography = states, 
                    table.number = "B23001", col.names="pretty")
 employ.df = data.frame(employ@estimate)
-names(employ.df) = gsub("Sex.by.Age.by.Employment.Status.for.the.Popula
-                        tion.16.Years.and.over..", "", names(employ.df))
+names(employ.df) = gsub("Sex.by.Age.by.Employment.Status.for.the.Population.16.Years.and.over..", "", names(employ.df))
 
 
 #B01001
