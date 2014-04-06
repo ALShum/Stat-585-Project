@@ -1,6 +1,7 @@
 library(acs)
 library(ggplot2)
 library(reshape2)
+library(plyr)
 states = geo.make(state = "*")
 api.key.install('f68ba33043f9a8cd289bf4e910b52e1332e8e96a')
 
@@ -41,6 +42,15 @@ employ = acs.fetch(endyear = 2012, span = 5, geography = states,
                    table.number = "B23001", col.names="pretty")
 employ.df = data.frame(employ@estimate)
 names(employ.df) = gsub("Sex.by.Age.by.Employment.Status.for.the.Population.16.Years.and.over..", "", names(employ.df))
+employ.df = employ.df[,-c(1,2,88)]
+employ.df = employ.df[,grep('employed|forces',names(employ.df),ignore.case=T)]
+names(employ.df) = gsub("Civilian..", "", names(employ.df))
+employ.df$state = rownames(employ.df)
+rownames(employ.df) = NULL
+employ.melt = melt(employ.df, id='state')
+employcols = ldply(strsplit(as.character(employ.melt$variable), "\\.\\."))
+employ.df2 = data.frame(state = employ.melt$state, gender = employcols$V1, 
+                     age = employcols$V2, type = employcols$V4, freq = employ.melt$value)
 
 
 #B01001
@@ -52,15 +62,25 @@ age.df = age.df[,-c(1,2,26)]
 age.df$state = rownames(age.df)
 rownames(age.df) = NULL
 age.melt = melt(age.df, id='state')
-
-
-
-
-cols = ldply(strsplit(as.character(age.melt$variable), "\\.\\."))
-names(cols) = c("gender", "age")
-age.df2 = data.frame(state = age.melt$state, gender = cols$gender, 
-                     age = cols$age, freq = age.melt$value)
+agecols = ldply(strsplit(as.character(age.melt$variable), "\\.\\."))
+names(agecols) = c("gender", "age")
+age.df2 = data.frame(state = age.melt$state, gender = agecols$gender, 
+                     age = agecols$age, freq = age.melt$value)
 age.df2$age = factor(age.df2$age, levels(age.df2$age)[c(23, 12, 1:11, 13:22)])
 
 
 qplot(age, freq, data=subset(age.df2, state=="Alaska")) + coord_flip()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
