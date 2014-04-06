@@ -3,7 +3,7 @@ library(ggplot2)
 library(reshape2)
 library(plyr)
 states = geo.make(state = "*")
-api.key.install('f68ba33043f9a8cd289bf4e910b52e1332e8e96a')
+#api.key.install('f68ba33043f9a8cd289bf4e910b52e1332e8e96a')
 
 #http://api.census.gov/data/2012/acs5/variables.json
 #B19326 - Median Income by Sex by Work Experience for the Population 15+ Years
@@ -15,8 +15,8 @@ api.key.install('f68ba33043f9a8cd289bf4e910b52e1332e8e96a')
 #B17001(A-H) - POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE
 
 search_terms = acs.lookup(endyear = 2012, span = 5, dataset = "acs", 
-                          table.name="median income", case.sensitive = F)
-search_terms@results[33:39,]
+                          table.name="race", case.sensitive = F)
+search_terms@results[,c(3)]
 
 #B19326
 median = acs.fetch(endyear = 2012, span = 5, geography = states, 
