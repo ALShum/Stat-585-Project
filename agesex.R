@@ -3,8 +3,9 @@ library(ggplot2)
 library(reshape2)
 library(plyr)
 
-
 #B01001
+# ages 0-4, 5-9, 10-14, *15-19*, *20-24*, 25-29, 30-34, 35-39, 40-44, 45-49,
+            # 50-54, 55-59, *60-64*, *65-69*, 70-74, 75-79, *80+*
 states = geo.make(state = "*")
 age = acs.fetch(endyear = 2012, span = 5, geography = states, 
                 table.number = "B01001", col.names="pretty")
