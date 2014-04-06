@@ -7,7 +7,7 @@ http://api.census.gov/data/2012/acs5/variables.json
 B19326 - Median Income by Sex by Work Experience for the Population 15+ Years
 B23001 - Sex by Age by Employment Status for the Population 16 Years and over
 B01001 -
-  B22005(A-H) - Receipt of Food Stamps/SNAP in the Past 12 Months by Race of Householder
+B22005(A-H) - Receipt of Food Stamps/SNAP in the Past 12 Months by Race of Householder
 C23002(A-H) - Sex by Age by Employment Status for the Population 16 Years and Over
 B14007(A-H) - School Enrollment by Level of School for the Population 3 Years and Over
 B17001(A-H) - POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE
