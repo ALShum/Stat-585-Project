@@ -29,3 +29,4 @@ qplot(total, reorder(state, total), data=med)
 qplot(male_full, reorder(state, male_full), data=med)
 qplot(female_full, reorder(state, female_full), data=med)
 
+#write.csv(medplot,'medianincome.csv')

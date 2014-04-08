@@ -17,9 +17,10 @@ states = geo.make(state = "*")
 
 #optional
 #C23002(A-H) - Sex by Age by Employment Status for the Population 16 Years and Over (race)
+
 search_terms = acs.lookup(endyear = 2012, span = 5, dataset = "acs", 
-                          table.name="college", case.sensitive = F)
-search_terms@results[,c(3)]
+                          table.name="poverty status", case.sensitive = F)
+search_terms@results[1668:1702,]
 
 #B19326
 median = acs.fetch(endyear = 2012, span = 5, geography = states, 

@@ -78,3 +78,14 @@ levels(emp$age) = gsub(".years", "", levels(emp$age))
 qplot(freq, reorder(state, freq), data=filter(emp,type == 'Employed'),
       colour = age, shape = gender)
 
+#write.csv(emp,'emptotal.csv')
+
+
+
+
+
+
+
+
+
+

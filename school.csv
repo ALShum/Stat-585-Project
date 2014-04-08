@@ -1,0 +1,1249 @@
+"","state","gender","school","age","freq"
+"1","Alabama","Male","public","15.to.17",845
+"2","Alaska","Male","public","15.to.17",30
+"3","Arizona","Male","public","15.to.17",1283
+"4","Arkansas","Male","public","15.to.17",378
+"5","California","Male","public","15.to.17",10339
+"6","Colorado","Male","public","15.to.17",735
+"7","Connecticut","Male","public","15.to.17",554
+"8","Delaware","Male","public","15.to.17",132
+"9","District of Columbia","Male","public","15.to.17",44
+"10","Florida","Male","public","15.to.17",2953
+"11","Georgia","Male","public","15.to.17",1672
+"12","Hawaii","Male","public","15.to.17",325
+"13","Idaho","Male","public","15.to.17",32
+"14","Illinois","Male","public","15.to.17",1630
+"15","Indiana","Male","public","15.to.17",649
+"16","Iowa","Male","public","15.to.17",252
+"17","Kansas","Male","public","15.to.17",214
+"18","Kentucky","Male","public","15.to.17",663
+"19","Louisiana","Male","public","15.to.17",555
+"20","Maine","Male","public","15.to.17",137
+"21","Maryland","Male","public","15.to.17",1917
+"22","Massachusetts","Male","public","15.to.17",664
+"23","Michigan","Male","public","15.to.17",1617
+"24","Minnesota","Male","public","15.to.17",422
+"25","Mississippi","Male","public","15.to.17",598
+"26","Missouri","Male","public","15.to.17",411
+"27","Montana","Male","public","15.to.17",92
+"28","Nebraska","Male","public","15.to.17",133
+"29","Nevada","Male","public","15.to.17",313
+"30","New Hampshire","Male","public","15.to.17",160
+"31","New Jersey","Male","public","15.to.17",1142
+"32","New Mexico","Male","public","15.to.17",504
+"33","New York","Male","public","15.to.17",3900
+"34","North Carolina","Male","public","15.to.17",1057
+"35","North Dakota","Male","public","15.to.17",67
+"36","Ohio","Male","public","15.to.17",1160
+"37","Oklahoma","Male","public","15.to.17",304
+"38","Oregon","Male","public","15.to.17",719
+"39","Pennsylvania","Male","public","15.to.17",1079
+"40","Rhode Island","Male","public","15.to.17",225
+"41","South Carolina","Male","public","15.to.17",544
+"42","South Dakota","Male","public","15.to.17",31
+"43","Tennessee","Male","public","15.to.17",422
+"44","Texas","Male","public","15.to.17",3178
+"45","Utah","Male","public","15.to.17",270
+"46","Vermont","Male","public","15.to.17",19
+"47","Virginia","Male","public","15.to.17",1021
+"48","Washington","Male","public","15.to.17",1145
+"49","West Virginia","Male","public","15.to.17",206
+"50","Wisconsin","Male","public","15.to.17",398
+"51","Wyoming","Male","public","15.to.17",63
+"52","Puerto Rico","Male","public","15.to.17",1094
+"53","Alabama","Male","public","18.to.24",73085
+"54","Alaska","Male","public","18.to.24",7852
+"55","Arizona","Male","public","18.to.24",98686
+"56","Arkansas","Male","public","18.to.24",41490
+"57","California","Male","public","18.to.24",713506
+"58","Colorado","Male","public","18.to.24",84460
+"59","Connecticut","Male","public","18.to.24",45321
+"60","Delaware","Male","public","18.to.24",14748
+"61","District of Columbia","Male","public","18.to.24",3385
+"62","Florida","Male","public","18.to.24",268659
+"63","Georgia","Male","public","18.to.24",135553
+"64","Hawaii","Male","public","18.to.24",17488
+"65","Idaho","Male","public","18.to.24",20436
+"66","Illinois","Male","public","18.to.24",184815
+"67","Indiana","Male","public","18.to.24",101603
+"68","Iowa","Male","public","18.to.24",50423
+"69","Kansas","Male","public","18.to.24",52712
+"70","Kentucky","Male","public","18.to.24",58906
+"71","Louisiana","Male","public","18.to.24",66265
+"72","Maine","Male","public","18.to.24",15550
+"73","Maryland","Male","public","18.to.24",89653
+"74","Massachusetts","Male","public","18.to.24",77747
+"75","Michigan","Male","public","18.to.24",184544
+"76","Minnesota","Male","public","18.to.24",78026
+"77","Mississippi","Male","public","18.to.24",48338
+"78","Missouri","Male","public","18.to.24",80230
+"79","Montana","Male","public","18.to.24",16693
+"80","Nebraska","Male","public","18.to.24",32455
+"81","Nevada","Male","public","18.to.24",30387
+"82","New Hampshire","Male","public","18.to.24",16122
+"83","New Jersey","Male","public","18.to.24",122388
+"84","New Mexico","Male","public","18.to.24",30006
+"85","New York","Male","public","18.to.24",275750
+"86","North Carolina","Male","public","18.to.24",137673
+"87","North Dakota","Male","public","18.to.24",17051
+"88","Ohio","Male","public","18.to.24",168537
+"89","Oklahoma","Male","public","18.to.24",54918
+"90","Oregon","Male","public","18.to.24",56930
+"91","Pennsylvania","Male","public","18.to.24",160141
+"92","Rhode Island","Male","public","18.to.24",15504
+"93","South Carolina","Male","public","18.to.24",65434
+"94","South Dakota","Male","public","18.to.24",14290
+"95","Tennessee","Male","public","18.to.24",78046
+"96","Texas","Male","public","18.to.24",384830
+"97","Utah","Male","public","18.to.24",45959
+"98","Vermont","Male","public","18.to.24",9454
+"99","Virginia","Male","public","18.to.24",131581
+"100","Washington","Male","public","18.to.24",94385
+"101","West Virginia","Male","public","18.to.24",28834
+"102","Wisconsin","Male","public","18.to.24",91259
+"103","Wyoming","Male","public","18.to.24",9500
+"104","Puerto Rico","Male","public","18.to.24",30877
+"105","Alabama","Male","public","25.to.34",23607
+"106","Alaska","Male","public","25.to.34",5770
+"107","Arizona","Male","public","25.to.34",44647
+"108","Arkansas","Male","public","25.to.34",14409
+"109","California","Male","public","25.to.34",250605
+"110","Colorado","Male","public","25.to.34",35116
+"111","Connecticut","Male","public","25.to.34",14330
+"112","Delaware","Male","public","25.to.34",4058
+"113","District of Columbia","Male","public","25.to.34",2938
+"114","Florida","Male","public","25.to.34",99664
+"115","Georgia","Male","public","25.to.34",50541
+"116","Hawaii","Male","public","25.to.34",9269
+"117","Idaho","Male","public","25.to.34",12141
+"118","Illinois","Male","public","25.to.34",61185
+"119","Indiana","Male","public","25.to.34",35526
+"120","Iowa","Male","public","25.to.34",15900
+"121","Kansas","Male","public","25.to.34",17526
+"122","Kentucky","Male","public","25.to.34",22203
+"123","Louisiana","Male","public","25.to.34",20815
+"124","Maine","Male","public","25.to.34",4696
+"125","Maryland","Male","public","25.to.34",35685
+"126","Massachusetts","Male","public","25.to.34",24462
+"127","Michigan","Male","public","25.to.34",64369
+"128","Minnesota","Male","public","25.to.34",30172
+"129","Mississippi","Male","public","25.to.34",13336
+"130","Missouri","Male","public","25.to.34",28193
+"131","Montana","Male","public","25.to.34",5833
+"132","Nebraska","Male","public","25.to.34",11524
+"133","Nevada","Male","public","25.to.34",14693
+"134","New Hampshire","Male","public","25.to.34",4157
+"135","New Jersey","Male","public","25.to.34",32138
+"136","New Mexico","Male","public","25.to.34",15869
+"137","New York","Male","public","25.to.34",75065
+"138","North Carolina","Male","public","25.to.34",49365
+"139","North Dakota","Male","public","25.to.34",4924
+"140","Ohio","Male","public","25.to.34",63041
+"141","Oklahoma","Male","public","25.to.34",21745
+"142","Oregon","Male","public","25.to.34",27416
+"143","Pennsylvania","Male","public","25.to.34",43373
+"144","Rhode Island","Male","public","25.to.34",4228
+"145","South Carolina","Male","public","25.to.34",21227
+"146","South Dakota","Male","public","25.to.34",4430
+"147","Tennessee","Male","public","25.to.34",28539
+"148","Texas","Male","public","25.to.34",155400
+"149","Utah","Male","public","25.to.34",33209
+"150","Vermont","Male","public","25.to.34",1914
+"151","Virginia","Male","public","25.to.34",49849
+"152","Washington","Male","public","25.to.34",41061
+"153","West Virginia","Male","public","25.to.34",8461
+"154","Wisconsin","Male","public","25.to.34",29507
+"155","Wyoming","Male","public","25.to.34",3252
+"156","Puerto Rico","Male","public","25.to.34",6602
+"157","Alabama","Male","public","35.and.over",14658
+"158","Alaska","Male","public","35.and.over",4194
+"159","Arizona","Male","public","35.and.over",29912
+"160","Arkansas","Male","public","35.and.over",8823
+"161","California","Male","public","35.and.over",164805
+"162","Colorado","Male","public","35.and.over",22068
+"163","Connecticut","Male","public","35.and.over",10001
+"164","Delaware","Male","public","35.and.over",3190
+"165","District of Columbia","Male","public","35.and.over",1999
+"166","Florida","Male","public","35.and.over",64351
+"167","Georgia","Male","public","35.and.over",36535
+"168","Hawaii","Male","public","35.and.over",6121
+"169","Idaho","Male","public","35.and.over",7195
+"170","Illinois","Male","public","35.and.over",42107
+"171","Indiana","Male","public","35.and.over",24193
+"172","Iowa","Male","public","35.and.over",8812
+"173","Kansas","Male","public","35.and.over",11584
+"174","Kentucky","Male","public","35.and.over",14421
+"175","Louisiana","Male","public","35.and.over",10799
+"176","Maine","Male","public","35.and.over",4358
+"177","Maryland","Male","public","35.and.over",25784
+"178","Massachusetts","Male","public","35.and.over",16270
+"179","Michigan","Male","public","35.and.over",43771
+"180","Minnesota","Male","public","35.and.over",18324
+"181","Mississippi","Male","public","35.and.over",8377
+"182","Missouri","Male","public","35.and.over",18646
+"183","Montana","Male","public","35.and.over",2885
+"184","Nebraska","Male","public","35.and.over",6899
+"185","Nevada","Male","public","35.and.over",11898
+"186","New Hampshire","Male","public","35.and.over",3748
+"187","New Jersey","Male","public","35.and.over",21529
+"188","New Mexico","Male","public","35.and.over",12395
+"189","New York","Male","public","35.and.over",44782
+"190","North Carolina","Male","public","35.and.over",41061
+"191","North Dakota","Male","public","35.and.over",2438
+"192","Ohio","Male","public","35.and.over",42677
+"193","Oklahoma","Male","public","35.and.over",13107
+"194","Oregon","Male","public","35.and.over",18334
+"195","Pennsylvania","Male","public","35.and.over",28694
+"196","Rhode Island","Male","public","35.and.over",3085
+"197","South Carolina","Male","public","35.and.over",14713
+"198","South Dakota","Male","public","35.and.over",2655
+"199","Tennessee","Male","public","35.and.over",18884
+"200","Texas","Male","public","35.and.over",93006
+"201","Utah","Male","public","35.and.over",11387
+"202","Vermont","Male","public","35.and.over",1607
+"203","Virginia","Male","public","35.and.over",36076
+"204","Washington","Male","public","35.and.over",29725
+"205","West Virginia","Male","public","35.and.over",5164
+"206","Wisconsin","Male","public","35.and.over",20965
+"207","Wyoming","Male","public","35.and.over",2458
+"208","Puerto Rico","Male","public","35.and.over",3647
+"209","Alabama","Male","private","15.to.17",59
+"210","Alaska","Male","private","15.to.17",42
+"211","Arizona","Male","private","15.to.17",164
+"212","Arkansas","Male","private","15.to.17",28
+"213","California","Male","private","15.to.17",1339
+"214","Colorado","Male","private","15.to.17",148
+"215","Connecticut","Male","private","15.to.17",170
+"216","Delaware","Male","private","15.to.17",24
+"217","District of Columbia","Male","private","15.to.17",66
+"218","Florida","Male","private","15.to.17",971
+"219","Georgia","Male","private","15.to.17",291
+"220","Hawaii","Male","private","15.to.17",55
+"221","Idaho","Male","private","15.to.17",8
+"222","Illinois","Male","private","15.to.17",421
+"223","Indiana","Male","private","15.to.17",56
+"224","Iowa","Male","private","15.to.17",98
+"225","Kansas","Male","private","15.to.17",0
+"226","Kentucky","Male","private","15.to.17",94
+"227","Louisiana","Male","private","15.to.17",144
+"228","Maine","Male","private","15.to.17",48
+"229","Maryland","Male","private","15.to.17",323
+"230","Massachusetts","Male","private","15.to.17",588
+"231","Michigan","Male","private","15.to.17",279
+"232","Minnesota","Male","private","15.to.17",88
+"233","Mississippi","Male","private","15.to.17",136
+"234","Missouri","Male","private","15.to.17",137
+"235","Montana","Male","private","15.to.17",2
+"236","Nebraska","Male","private","15.to.17",18
+"237","Nevada","Male","private","15.to.17",19
+"238","New Hampshire","Male","private","15.to.17",45
+"239","New Jersey","Male","private","15.to.17",430
+"240","New Mexico","Male","private","15.to.17",180
+"241","New York","Male","private","15.to.17",2024
+"242","North Carolina","Male","private","15.to.17",171
+"243","North Dakota","Male","private","15.to.17",17
+"244","Ohio","Male","private","15.to.17",319
+"245","Oklahoma","Male","private","15.to.17",138
+"246","Oregon","Male","private","15.to.17",35
+"247","Pennsylvania","Male","private","15.to.17",687
+"248","Rhode Island","Male","private","15.to.17",96
+"249","South Carolina","Male","private","15.to.17",157
+"250","South Dakota","Male","private","15.to.17",0
+"251","Tennessee","Male","private","15.to.17",225
+"252","Texas","Male","private","15.to.17",451
+"253","Utah","Male","private","15.to.17",114
+"254","Vermont","Male","private","15.to.17",38
+"255","Virginia","Male","private","15.to.17",289
+"256","Washington","Male","private","15.to.17",73
+"257","West Virginia","Male","private","15.to.17",70
+"258","Wisconsin","Male","private","15.to.17",95
+"259","Wyoming","Male","private","15.to.17",2
+"260","Puerto Rico","Male","private","15.to.17",1301
+"261","Alabama","Male","private","18.to.24",11381
+"262","Alaska","Male","private","18.to.24",1412
+"263","Arizona","Male","private","18.to.24",11923
+"264","Arkansas","Male","private","18.to.24",7342
+"265","California","Male","private","18.to.24",122890
+"266","Colorado","Male","private","18.to.24",12504
+"267","Connecticut","Male","private","18.to.24",27998
+"268","Delaware","Male","private","18.to.24",3463
+"269","District of Columbia","Male","private","18.to.24",14270
+"270","Florida","Male","private","18.to.24",65282
+"271","Georgia","Male","private","18.to.24",29517
+"272","Hawaii","Male","private","18.to.24",4244
+"273","Idaho","Male","private","18.to.24",6427
+"274","Illinois","Male","private","18.to.24",74371
+"275","Indiana","Male","private","18.to.24",27107
+"276","Iowa","Male","private","18.to.24",18240
+"277","Kansas","Male","private","18.to.24",7301
+"278","Kentucky","Male","private","18.to.24",11349
+"279","Louisiana","Male","private","18.to.24",12146
+"280","Maine","Male","private","18.to.24",6668
+"281","Maryland","Male","private","18.to.24",24378
+"282","Massachusetts","Male","private","18.to.24",86152
+"283","Michigan","Male","private","18.to.24",30068
+"284","Minnesota","Male","private","18.to.24",26383
+"285","Mississippi","Male","private","18.to.24",6417
+"286","Missouri","Male","private","18.to.24",28828
+"287","Montana","Male","private","18.to.24",1836
+"288","Nebraska","Male","private","18.to.24",7465
+"289","Nevada","Male","private","18.to.24",4285
+"290","New Hampshire","Male","private","18.to.24",9504
+"291","New Jersey","Male","private","18.to.24",45520
+"292","New Mexico","Male","private","18.to.24",4318
+"293","New York","Male","private","18.to.24",170123
+"294","North Carolina","Male","private","18.to.24",32000
+"295","North Dakota","Male","private","18.to.24",2098
+"296","Ohio","Male","private","18.to.24",51488
+"297","Oklahoma","Male","private","18.to.24",10849
+"298","Oregon","Male","private","18.to.24",10731
+"299","Pennsylvania","Male","private","18.to.24",107957
+"300","Rhode Island","Male","private","18.to.24",15394
+"301","South Carolina","Male","private","18.to.24",16209
+"302","South Dakota","Male","private","18.to.24",1977
+"303","Tennessee","Male","private","18.to.24",25660
+"304","Texas","Male","private","18.to.24",64396
+"305","Utah","Male","private","18.to.24",19520
+"306","Vermont","Male","private","18.to.24",6775
+"307","Virginia","Male","private","18.to.24",27900
+"308","Washington","Male","private","18.to.24",18372
+"309","West Virginia","Male","private","18.to.24",4803
+"310","Wisconsin","Male","private","18.to.24",20151
+"311","Wyoming","Male","private","18.to.24",710
+"312","Puerto Rico","Male","private","18.to.24",44819
+"313","Alabama","Male","private","25.to.34",4835
+"314","Alaska","Male","private","25.to.34",1138
+"315","Arizona","Male","private","25.to.34",12550
+"316","Arkansas","Male","private","25.to.34",2641
+"317","California","Male","private","25.to.34",88251
+"318","Colorado","Male","private","25.to.34",10132
+"319","Connecticut","Male","private","25.to.34",8836
+"320","Delaware","Male","private","25.to.34",1881
+"321","District of Columbia","Male","private","25.to.34",6207
+"322","Florida","Male","private","25.to.34",36758
+"323","Georgia","Male","private","25.to.34",17663
+"324","Hawaii","Male","private","25.to.34",3472
+"325","Idaho","Male","private","25.to.34",3531
+"326","Illinois","Male","private","25.to.34",38117
+"327","Indiana","Male","private","25.to.34",8486
+"328","Iowa","Male","private","25.to.34",4944
+"329","Kansas","Male","private","25.to.34",4508
+"330","Kentucky","Male","private","25.to.34",5700
+"331","Louisiana","Male","private","25.to.34",5822
+"332","Maine","Male","private","25.to.34",1369
+"333","Maryland","Male","private","25.to.34",15027
+"334","Massachusetts","Male","private","25.to.34",31635
+"335","Michigan","Male","private","25.to.34",14249
+"336","Minnesota","Male","private","25.to.34",11087
+"337","Mississippi","Male","private","25.to.34",3375
+"338","Missouri","Male","private","25.to.34",15446
+"339","Montana","Male","private","25.to.34",1072
+"340","Nebraska","Male","private","25.to.34",3224
+"341","Nevada","Male","private","25.to.34",4320
+"342","New Hampshire","Male","private","25.to.34",3133
+"343","New Jersey","Male","private","25.to.34",21813
+"344","New Mexico","Male","private","25.to.34",2676
+"345","New York","Male","private","25.to.34",65441
+"346","North Carolina","Male","private","25.to.34",13900
+"347","North Dakota","Male","private","25.to.34",854
+"348","Ohio","Male","private","25.to.34",19213
+"349","Oklahoma","Male","private","25.to.34",4864
+"350","Oregon","Male","private","25.to.34",5849
+"351","Pennsylvania","Male","private","25.to.34",32618
+"352","Rhode Island","Male","private","25.to.34",3216
+"353","South Carolina","Male","private","25.to.34",5737
+"354","South Dakota","Male","private","25.to.34",1144
+"355","Tennessee","Male","private","25.to.34",10563
+"356","Texas","Male","private","25.to.34",34526
+"357","Utah","Male","private","25.to.34",10500
+"358","Vermont","Male","private","25.to.34",1168
+"359","Virginia","Male","private","25.to.34",19198
+"360","Washington","Male","private","25.to.34",11251
+"361","West Virginia","Male","private","25.to.34",2039
+"362","Wisconsin","Male","private","25.to.34",8926
+"363","Wyoming","Male","private","25.to.34",609
+"364","Puerto Rico","Male","private","25.to.34",18823
+"365","Alabama","Male","private","35.and.over",5199
+"366","Alaska","Male","private","35.and.over",1372
+"367","Arizona","Male","private","35.and.over",11614
+"368","Arkansas","Male","private","35.and.over",2874
+"369","California","Male","private","35.and.over",69429
+"370","Colorado","Male","private","35.and.over",10604
+"371","Connecticut","Male","private","35.and.over",7372
+"372","Delaware","Male","private","35.and.over",1752
+"373","District of Columbia","Male","private","35.and.over",2114
+"374","Florida","Male","private","35.and.over",38705
+"375","Georgia","Male","private","35.and.over",18769
+"376","Hawaii","Male","private","35.and.over",3447
+"377","Idaho","Male","private","35.and.over",2032
+"378","Illinois","Male","private","35.and.over",23841
+"379","Indiana","Male","private","35.and.over",8797
+"380","Iowa","Male","private","35.and.over",3970
+"381","Kansas","Male","private","35.and.over",4339
+"382","Kentucky","Male","private","35.and.over",5193
+"383","Louisiana","Male","private","35.and.over",4167
+"384","Maine","Male","private","35.and.over",1656
+"385","Maryland","Male","private","35.and.over",14027
+"386","Massachusetts","Male","private","35.and.over",15064
+"387","Michigan","Male","private","35.and.over",14467
+"388","Minnesota","Male","private","35.and.over",8230
+"389","Mississippi","Male","private","35.and.over",2581
+"390","Missouri","Male","private","35.and.over",11139
+"391","Montana","Male","private","35.and.over",1059
+"392","Nebraska","Male","private","35.and.over",2248
+"393","Nevada","Male","private","35.and.over",4633
+"394","New Hampshire","Male","private","35.and.over",2364
+"395","New Jersey","Male","private","35.and.over",16447
+"396","New Mexico","Male","private","35.and.over",2714
+"397","New York","Male","private","35.and.over",35295
+"398","North Carolina","Male","private","35.and.over",14344
+"399","North Dakota","Male","private","35.and.over",534
+"400","Ohio","Male","private","35.and.over",16847
+"401","Oklahoma","Male","private","35.and.over",4586
+"402","Oregon","Male","private","35.and.over",5820
+"403","Pennsylvania","Male","private","35.and.over",22634
+"404","Rhode Island","Male","private","35.and.over",2228
+"405","South Carolina","Male","private","35.and.over",6824
+"406","South Dakota","Male","private","35.and.over",909
+"407","Tennessee","Male","private","35.and.over",9715
+"408","Texas","Male","private","35.and.over",31267
+"409","Utah","Male","private","35.and.over",4596
+"410","Vermont","Male","private","35.and.over",945
+"411","Virginia","Male","private","35.and.over",18302
+"412","Washington","Male","private","35.and.over",10913
+"413","West Virginia","Male","private","35.and.over",2169
+"414","Wisconsin","Male","private","35.and.over",8929
+"415","Wyoming","Male","private","35.and.over",687
+"416","Puerto Rico","Male","private","35.and.over",9035
+"417","Alabama","Male","not enrolled","15.to.17",100574
+"418","Alaska","Male","not enrolled","15.to.17",16311
+"419","Arizona","Male","not enrolled","15.to.17",137484
+"420","Arkansas","Male","not enrolled","15.to.17",60456
+"421","California","Male","not enrolled","15.to.17",840179
+"422","Colorado","Male","not enrolled","15.to.17",101993
+"423","Connecticut","Male","not enrolled","15.to.17",76883
+"424","Delaware","Male","not enrolled","15.to.17",18442
+"425","District of Columbia","Male","not enrolled","15.to.17",8383
+"426","Florida","Male","not enrolled","15.to.17",363356
+"427","Georgia","Male","not enrolled","15.to.17",211570
+"428","Hawaii","Male","not enrolled","15.to.17",25805
+"429","Idaho","Male","not enrolled","15.to.17",36152
+"430","Illinois","Male","not enrolled","15.to.17",279493
+"431","Indiana","Male","not enrolled","15.to.17",141596
+"432","Iowa","Male","not enrolled","15.to.17",63220
+"433","Kansas","Male","not enrolled","15.to.17",61103
+"434","Kentucky","Male","not enrolled","15.to.17",89137
+"435","Louisiana","Male","not enrolled","15.to.17",95547
+"436","Maine","Male","not enrolled","15.to.17",26347
+"437","Maryland","Male","not enrolled","15.to.17",121276
+"438","Massachusetts","Male","not enrolled","15.to.17",132263
+"439","Michigan","Male","not enrolled","15.to.17",220625
+"440","Minnesota","Male","not enrolled","15.to.17",112694
+"441","Mississippi","Male","not enrolled","15.to.17",64130
+"442","Missouri","Male","not enrolled","15.to.17",126164
+"443","Montana","Male","not enrolled","15.to.17",19946
+"444","Nebraska","Male","not enrolled","15.to.17",38417
+"445","Nevada","Male","not enrolled","15.to.17",56448
+"446","New Hampshire","Male","not enrolled","15.to.17",27794
+"447","New Jersey","Male","not enrolled","15.to.17",187733
+"448","New Mexico","Male","not enrolled","15.to.17",43920
+"449","New York","Male","not enrolled","15.to.17",397355
+"450","North Carolina","Male","not enrolled","15.to.17",194246
+"451","North Dakota","Male","not enrolled","15.to.17",13416
+"452","Ohio","Male","not enrolled","15.to.17",246481
+"453","Oklahoma","Male","not enrolled","15.to.17",78406
+"454","Oregon","Male","not enrolled","15.to.17",76053
+"455","Pennsylvania","Male","not enrolled","15.to.17",263147
+"456","Rhode Island","Male","not enrolled","15.to.17",20991
+"457","South Carolina","Male","not enrolled","15.to.17",93036
+"458","South Dakota","Male","not enrolled","15.to.17",17567
+"459","Tennessee","Male","not enrolled","15.to.17",130949
+"460","Texas","Male","not enrolled","15.to.17",574119
+"461","Utah","Male","not enrolled","15.to.17",66640
+"462","Vermont","Male","not enrolled","15.to.17",12580
+"463","Virginia","Male","not enrolled","15.to.17",161950
+"464","Washington","Male","not enrolled","15.to.17",138573
+"465","West Virginia","Male","not enrolled","15.to.17",34771
+"466","Wisconsin","Male","not enrolled","15.to.17",120381
+"467","Wyoming","Male","not enrolled","15.to.17",11446
+"468","Puerto Rico","Male","not enrolled","15.to.17",83465
+"469","Alabama","Male","not enrolled","18.to.24",156705
+"470","Alaska","Male","not enrolled","18.to.24",32719
+"471","Arizona","Male","not enrolled","18.to.24",220001
+"472","Arkansas","Male","not enrolled","18.to.24",96340
+"473","California","Male","not enrolled","18.to.24",1204366
+"474","Colorado","Male","not enrolled","18.to.24",160491
+"475","Connecticut","Male","not enrolled","18.to.24",95735
+"476","Delaware","Male","not enrolled","18.to.24",27478
+"477","District of Columbia","Male","not enrolled","18.to.24",20494
+"478","Florida","Male","not enrolled","18.to.24",565530
+"479","Georgia","Male","not enrolled","18.to.24",339532
+"480","Hawaii","Male","not enrolled","18.to.24",49420
+"481","Idaho","Male","not enrolled","18.to.24",52417
+"482","Illinois","Male","not enrolled","18.to.24",381687
+"483","Indiana","Male","not enrolled","18.to.24",203341
+"484","Iowa","Male","not enrolled","18.to.24",89304
+"485","Kansas","Male","not enrolled","18.to.24",91472
+"486","Kentucky","Male","not enrolled","18.to.24",142163
+"487","Louisiana","Male","not enrolled","18.to.24",159772
+"488","Maine","Male","not enrolled","18.to.24",37412
+"489","Maryland","Male","not enrolled","18.to.24",171960
+"490","Massachusetts","Male","not enrolled","18.to.24",173990
+"491","Michigan","Male","not enrolled","18.to.24",283720
+"492","Minnesota","Male","not enrolled","18.to.24",154075
+"493","Mississippi","Male","not enrolled","18.to.24",101000
+"494","Missouri","Male","not enrolled","18.to.24",189706
+"495","Montana","Male","not enrolled","18.to.24",31859
+"496","Nebraska","Male","not enrolled","18.to.24",54962
+"497","Nevada","Male","not enrolled","18.to.24",93775
+"498","New Hampshire","Male","not enrolled","18.to.24",37235
+"499","New Jersey","Male","not enrolled","18.to.24",230438
+"500","New Mexico","Male","not enrolled","18.to.24",71740
+"501","New York","Male","not enrolled","18.to.24",557763
+"502","North Carolina","Male","not enrolled","18.to.24",313884
+"503","North Dakota","Male","not enrolled","18.to.24",25028
+"504","Ohio","Male","not enrolled","18.to.24",336653
+"505","Oklahoma","Male","not enrolled","18.to.24",131783
+"506","Oregon","Male","not enrolled","18.to.24",115991
+"507","Pennsylvania","Male","not enrolled","18.to.24",368732
+"508","Rhode Island","Male","not enrolled","18.to.24",28967
+"509","South Carolina","Male","not enrolled","18.to.24",162020
+"510","South Dakota","Male","not enrolled","18.to.24",26262
+"511","Tennessee","Male","not enrolled","18.to.24",201328
+"512","Texas","Male","not enrolled","18.to.24",888211
+"513","Utah","Male","not enrolled","18.to.24",95035
+"514","Vermont","Male","not enrolled","18.to.24",17894
+"515","Virginia","Male","not enrolled","18.to.24",257426
+"516","Washington","Male","not enrolled","18.to.24",226407
+"517","West Virginia","Male","not enrolled","18.to.24",54127
+"518","Wisconsin","Male","not enrolled","18.to.24",170635
+"519","Wyoming","Male","not enrolled","18.to.24",20054
+"520","Puerto Rico","Male","not enrolled","18.to.24",115218
+"521","Alabama","Male","not enrolled","25.to.34",270655
+"522","Alaska","Male","not enrolled","25.to.34",46603
+"523","Arizona","Male","not enrolled","25.to.34",384510
+"524","Arkansas","Male","not enrolled","25.to.34",171021
+"525","California","Male","not enrolled","25.to.34",2392835
+"526","Colorado","Male","not enrolled","25.to.34",332060
+"527","Connecticut","Male","not enrolled","25.to.34",187841
+"528","Delaware","Male","not enrolled","25.to.34",49643
+"529","District of Columbia","Male","not enrolled","25.to.34",50077
+"530","Florida","Male","not enrolled","25.to.34",1024538
+"531","Georgia","Male","not enrolled","25.to.34",590453
+"532","Hawaii","Male","not enrolled","25.to.34",85014
+"533","Idaho","Male","not enrolled","25.to.34",90775
+"534","Illinois","Male","not enrolled","25.to.34",790868
+"535","Indiana","Male","not enrolled","25.to.34",373150
+"536","Iowa","Male","not enrolled","25.to.34",174657
+"537","Kansas","Male","not enrolled","25.to.34",169740
+"538","Kentucky","Male","not enrolled","25.to.34",254726
+"539","Louisiana","Male","not enrolled","25.to.34",284252
+"540","Maine","Male","not enrolled","25.to.34",65713
+"541","Maryland","Male","not enrolled","25.to.34",325398
+"542","Massachusetts","Male","not enrolled","25.to.34",364843
+"543","Michigan","Male","not enrolled","25.to.34",506933
+"544","Minnesota","Male","not enrolled","25.to.34",322351
+"545","Mississippi","Male","not enrolled","25.to.34",171990
+"546","Missouri","Male","not enrolled","25.to.34",343516
+"547","Montana","Male","not enrolled","25.to.34",55801
+"548","Nebraska","Male","not enrolled","25.to.34",109451
+"549","Nevada","Male","not enrolled","25.to.34",179377
+"550","New Hampshire","Male","not enrolled","25.to.34",65709
+"551","New Jersey","Male","not enrolled","25.to.34",503577
+"552","New Mexico","Male","not enrolled","25.to.34",117621
+"553","New York","Male","not enrolled","25.to.34",1177942
+"554","North Carolina","Male","not enrolled","25.to.34",551551
+"555","North Dakota","Male","not enrolled","25.to.34",42505
+"556","Ohio","Male","not enrolled","25.to.34",625789
+"557","Oklahoma","Male","not enrolled","25.to.34",230354
+"558","Oregon","Male","not enrolled","25.to.34",232308
+"559","Pennsylvania","Male","not enrolled","25.to.34",687496
+"560","Rhode Island","Male","not enrolled","25.to.34",56506
+"561","South Carolina","Male","not enrolled","25.to.34",266961
+"562","South Dakota","Male","not enrolled","25.to.34",48656
+"563","Tennessee","Male","not enrolled","25.to.34",371237
+"564","Texas","Male","not enrolled","25.to.34",1638255
+"565","Utah","Male","not enrolled","25.to.34",182340
+"566","Vermont","Male","not enrolled","25.to.34",31440
+"567","Virginia","Male","not enrolled","25.to.34",478077
+"568","Washington","Male","not enrolled","25.to.34",427011
+"569","West Virginia","Male","not enrolled","25.to.34",100134
+"570","Wisconsin","Male","not enrolled","25.to.34",328002
+"571","Wyoming","Male","not enrolled","25.to.34",36108
+"572","Puerto Rico","Male","not enrolled","25.to.34",211002
+"573","Alabama","Male","not enrolled","35.and.over",1179753
+"574","Alaska","Male","not enrolled","35.and.over",172609
+"575","Arizona","Male","not enrolled","35.and.over",1543499
+"576","Arkansas","Male","not enrolled","35.and.over",723070
+"577","California","Male","not enrolled","35.and.over",8804181
+"578","Colorado","Male","not enrolled","35.and.over",1236673
+"579","Connecticut","Male","not enrolled","35.and.over",926128
+"580","Delaware","Male","not enrolled","35.and.over",225107
+"581","District of Columbia","Male","not enrolled","35.and.over",132455
+"582","Florida","Male","not enrolled","35.and.over",5022599
+"583","Georgia","Male","not enrolled","35.and.over",2259672
+"584","Hawaii","Male","not enrolled","35.and.over",349338
+"585","Idaho","Male","not enrolled","35.and.over",372233
+"586","Illinois","Male","not enrolled","35.and.over",3104385
+"587","Indiana","Male","not enrolled","35.and.over",1589160
+"588","Iowa","Male","not enrolled","35.and.over",770404
+"589","Kansas","Male","not enrolled","35.and.over",686216
+"590","Kentucky","Male","not enrolled","35.and.over",1095052
+"591","Louisiana","Male","not enrolled","35.and.over",1082160
+"592","Maine","Male","not enrolled","35.and.over",372301
+"593","Maryland","Male","not enrolled","35.and.over",1407952
+"594","Massachusetts","Male","not enrolled","35.and.over",1660161
+"595","Michigan","Male","not enrolled","35.and.over",2516246
+"596","Minnesota","Male","not enrolled","35.and.over",1334171
+"597","Mississippi","Male","not enrolled","35.and.over",700381
+"598","Missouri","Male","not enrolled","35.and.over",1488427
+"599","Montana","Male","not enrolled","35.and.over",265748
+"600","Nebraska","Male","not enrolled","35.and.over",444021
+"601","Nevada","Male","not enrolled","35.and.over",682244
+"602","New Hampshire","Male","not enrolled","35.and.over",361651
+"603","New Jersey","Male","not enrolled","35.and.over",2238000
+"604","New Mexico","Male","not enrolled","35.and.over",495651
+"605","New York","Male","not enrolled","35.and.over",4782084
+"606","North Carolina","Male","not enrolled","35.and.over",2332362
+"607","North Dakota","Male","not enrolled","35.and.over",169338
+"608","Ohio","Male","not enrolled","35.and.over",2917526
+"609","Oklahoma","Male","not enrolled","35.and.over",908535
+"610","Oregon","Male","not enrolled","35.and.over",983228
+"611","Pennsylvania","Male","not enrolled","35.and.over",3313688
+"612","Rhode Island","Male","not enrolled","35.and.over",265075
+"613","South Carolina","Male","not enrolled","35.and.over",1144026
+"614","South Dakota","Male","not enrolled","35.and.over",204778
+"615","Tennessee","Male","not enrolled","35.and.over",1588910
+"616","Texas","Male","not enrolled","35.and.over",5718007
+"617","Utah","Male","not enrolled","35.and.over",541711
+"618","Vermont","Male","not enrolled","35.and.over",171073
+"619","Virginia","Male","not enrolled","35.and.over",1970615
+"620","Washington","Male","not enrolled","35.and.over",1693401
+"621","West Virginia","Male","not enrolled","35.and.over",507215
+"622","Wisconsin","Male","not enrolled","35.and.over",1461385
+"623","Wyoming","Male","not enrolled","35.and.over",143798
+"624","Puerto Rico","Male","not enrolled","35.and.over",881125
+"625","Alabama","Female","public","15.to.17",958
+"626","Alaska","Female","public","15.to.17",178
+"627","Arizona","Female","public","15.to.17",1506
+"628","Arkansas","Female","public","15.to.17",357
+"629","California","Female","public","15.to.17",13352
+"630","Colorado","Female","public","15.to.17",915
+"631","Connecticut","Female","public","15.to.17",1089
+"632","Delaware","Female","public","15.to.17",179
+"633","District of Columbia","Female","public","15.to.17",71
+"634","Florida","Female","public","15.to.17",4758
+"635","Georgia","Female","public","15.to.17",2284
+"636","Hawaii","Female","public","15.to.17",403
+"637","Idaho","Female","public","15.to.17",557
+"638","Illinois","Female","public","15.to.17",1784
+"639","Indiana","Female","public","15.to.17",592
+"640","Iowa","Female","public","15.to.17",337
+"641","Kansas","Female","public","15.to.17",458
+"642","Kentucky","Female","public","15.to.17",450
+"643","Louisiana","Female","public","15.to.17",798
+"644","Maine","Female","public","15.to.17",151
+"645","Maryland","Female","public","15.to.17",1852
+"646","Massachusetts","Female","public","15.to.17",937
+"647","Michigan","Female","public","15.to.17",2440
+"648","Minnesota","Female","public","15.to.17",885
+"649","Mississippi","Female","public","15.to.17",614
+"650","Missouri","Female","public","15.to.17",745
+"651","Montana","Female","public","15.to.17",79
+"652","Nebraska","Female","public","15.to.17",236
+"653","Nevada","Female","public","15.to.17",663
+"654","New Hampshire","Female","public","15.to.17",242
+"655","New Jersey","Female","public","15.to.17",1544
+"656","New Mexico","Female","public","15.to.17",743
+"657","New York","Female","public","15.to.17",5314
+"658","North Carolina","Female","public","15.to.17",2095
+"659","North Dakota","Female","public","15.to.17",31
+"660","Ohio","Female","public","15.to.17",1621
+"661","Oklahoma","Female","public","15.to.17",515
+"662","Oregon","Female","public","15.to.17",867
+"663","Pennsylvania","Female","public","15.to.17",1576
+"664","Rhode Island","Female","public","15.to.17",354
+"665","South Carolina","Female","public","15.to.17",843
+"666","South Dakota","Female","public","15.to.17",63
+"667","Tennessee","Female","public","15.to.17",647
+"668","Texas","Female","public","15.to.17",5413
+"669","Utah","Female","public","15.to.17",412
+"670","Vermont","Female","public","15.to.17",104
+"671","Virginia","Female","public","15.to.17",1307
+"672","Washington","Female","public","15.to.17",1461
+"673","West Virginia","Female","public","15.to.17",230
+"674","Wisconsin","Female","public","15.to.17",601
+"675","Wyoming","Female","public","15.to.17",106
+"676","Puerto Rico","Female","public","15.to.17",1097
+"677","Alabama","Female","public","18.to.24",92689
+"678","Alaska","Female","public","18.to.24",9711
+"679","Arizona","Female","public","18.to.24",113907
+"680","Arkansas","Female","public","18.to.24",48592
+"681","California","Female","public","18.to.24",779111
+"682","Colorado","Female","public","18.to.24",89150
+"683","Connecticut","Female","public","18.to.24",51710
+"684","Delaware","Female","public","18.to.24",19432
+"685","District of Columbia","Female","public","18.to.24",4988
+"686","Florida","Female","public","18.to.24",325228
+"687","Georgia","Female","public","18.to.24",174170
+"688","Hawaii","Female","public","18.to.24",19845
+"689","Idaho","Female","public","18.to.24",22221
+"690","Illinois","Female","public","18.to.24",203375
+"691","Indiana","Female","public","18.to.24",112558
+"692","Iowa","Female","public","18.to.24",53961
+"693","Kansas","Female","public","18.to.24",59195
+"694","Kentucky","Female","public","18.to.24",76357
+"695","Louisiana","Female","public","18.to.24",81266
+"696","Maine","Female","public","18.to.24",18566
+"697","Maryland","Female","public","18.to.24",102830
+"698","Massachusetts","Female","public","18.to.24",87225
+"699","Michigan","Female","public","18.to.24",209445
+"700","Minnesota","Female","public","18.to.24",87979
+"701","Mississippi","Female","public","18.to.24",64696
+"702","Missouri","Female","public","18.to.24",96561
+"703","Montana","Female","public","18.to.24",16472
+"704","Nebraska","Female","public","18.to.24",34722
+"705","Nevada","Female","public","18.to.24",36970
+"706","New Hampshire","Female","public","18.to.24",20067
+"707","New Jersey","Female","public","18.to.24",131760
+"708","New Mexico","Female","public","18.to.24",36884
+"709","New York","Female","public","18.to.24",299715
+"710","North Carolina","Female","public","18.to.24",171813
+"711","North Dakota","Female","public","18.to.24",18397
+"712","Ohio","Female","public","18.to.24",195333
+"713","Oklahoma","Female","public","18.to.24",64227
+"714","Oregon","Female","public","18.to.24",61022
+"715","Pennsylvania","Female","public","18.to.24",185372
+"716","Rhode Island","Female","public","18.to.24",19396
+"717","South Carolina","Female","public","18.to.24",79906
+"718","South Dakota","Female","public","18.to.24",15069
+"719","Tennessee","Female","public","18.to.24",96360
+"720","Texas","Female","public","18.to.24",440037
+"721","Utah","Female","public","18.to.24",48246
+"722","Vermont","Female","public","18.to.24",11282
+"723","Virginia","Female","public","18.to.24",150471
+"724","Washington","Female","public","18.to.24",103453
+"725","West Virginia","Female","public","18.to.24",31279
+"726","Wisconsin","Female","public","18.to.24",106666
+"727","Wyoming","Female","public","18.to.24",10478
+"728","Puerto Rico","Female","public","18.to.24",45768
+"729","Alabama","Female","public","25.to.34",36346
+"730","Alaska","Female","public","25.to.34",5910
+"731","Arizona","Female","public","25.to.34",50857
+"732","Arkansas","Female","public","25.to.34",22388
+"733","California","Female","public","25.to.34",299457
+"734","Colorado","Female","public","25.to.34",39440
+"735","Connecticut","Female","public","25.to.34",19991
+"736","Delaware","Female","public","25.to.34",6104
+"737","District of Columbia","Female","public","25.to.34",3949
+"738","Florida","Female","public","25.to.34",129728
+"739","Georgia","Female","public","25.to.34",78626
+"740","Hawaii","Female","public","25.to.34",10274
+"741","Idaho","Female","public","25.to.34",11105
+"742","Illinois","Female","public","25.to.34",81829
+"743","Indiana","Female","public","25.to.34",47701
+"744","Iowa","Female","public","25.to.34",20369
+"745","Kansas","Female","public","25.to.34",22589
+"746","Kentucky","Female","public","25.to.34",33380
+"747","Louisiana","Female","public","25.to.34",33308
+"748","Maine","Female","public","25.to.34",7780
+"749","Maryland","Female","public","25.to.34",50531
+"750","Massachusetts","Female","public","25.to.34",33047
+"751","Michigan","Female","public","25.to.34",83024
+"752","Minnesota","Female","public","25.to.34",37610
+"753","Mississippi","Female","public","25.to.34",25134
+"754","Missouri","Female","public","25.to.34",41974
+"755","Montana","Female","public","25.to.34",6988
+"756","Nebraska","Female","public","25.to.34",13933
+"757","Nevada","Female","public","25.to.34",18904
+"758","New Hampshire","Female","public","25.to.34",5434
+"759","New Jersey","Female","public","25.to.34",47055
+"760","New Mexico","Female","public","25.to.34",20373
+"761","New York","Female","public","25.to.34",107911
+"762","North Carolina","Female","public","25.to.34",77214
+"763","North Dakota","Female","public","25.to.34",5080
+"764","Ohio","Female","public","25.to.34",89384
+"765","Oklahoma","Female","public","25.to.34",28484
+"766","Oregon","Female","public","25.to.34",30847
+"767","Pennsylvania","Female","public","25.to.34",61742
+"768","Rhode Island","Female","public","25.to.34",6623
+"769","South Carolina","Female","public","25.to.34",34998
+"770","South Dakota","Female","public","25.to.34",5515
+"771","Tennessee","Female","public","25.to.34",41372
+"772","Texas","Female","public","25.to.34",202082
+"773","Utah","Female","public","25.to.34",20434
+"774","Vermont","Female","public","25.to.34",3781
+"775","Virginia","Female","public","25.to.34",63465
+"776","Washington","Female","public","25.to.34",48399
+"777","West Virginia","Female","public","25.to.34",11946
+"778","Wisconsin","Female","public","25.to.34",39835
+"779","Wyoming","Female","public","25.to.34",4619
+"780","Puerto Rico","Female","public","25.to.34",8499
+"781","Alabama","Female","public","35.and.over",28492
+"782","Alaska","Female","public","35.and.over",7272
+"783","Arizona","Female","public","35.and.over",48565
+"784","Arkansas","Female","public","35.and.over",20445
+"785","California","Female","public","35.and.over",257565
+"786","Colorado","Female","public","35.and.over",34259
+"787","Connecticut","Female","public","35.and.over",19363
+"788","Delaware","Female","public","35.and.over",5919
+"789","District of Columbia","Female","public","35.and.over",3022
+"790","Florida","Female","public","35.and.over",109118
+"791","Georgia","Female","public","35.and.over",72426
+"792","Hawaii","Female","public","35.and.over",8321
+"793","Idaho","Female","public","35.and.over",11459
+"794","Illinois","Female","public","35.and.over",74684
+"795","Indiana","Female","public","35.and.over",41963
+"796","Iowa","Female","public","35.and.over",15302
+"797","Kansas","Female","public","35.and.over",18163
+"798","Kentucky","Female","public","35.and.over",25731
+"799","Louisiana","Female","public","35.and.over",21587
+"800","Maine","Female","public","35.and.over",8682
+"801","Maryland","Female","public","35.and.over",50389
+"802","Massachusetts","Female","public","35.and.over",33086
+"803","Michigan","Female","public","35.and.over",78644
+"804","Minnesota","Female","public","35.and.over",28176
+"805","Mississippi","Female","public","35.and.over",20003
+"806","Missouri","Female","public","35.and.over",33786
+"807","Montana","Female","public","35.and.over",5706
+"808","Nebraska","Female","public","35.and.over",11442
+"809","Nevada","Female","public","35.and.over",17237
+"810","New Hampshire","Female","public","35.and.over",6746
+"811","New Jersey","Female","public","35.and.over",42509
+"812","New Mexico","Female","public","35.and.over",19480
+"813","New York","Female","public","35.and.over",83785
+"814","North Carolina","Female","public","35.and.over",80079
+"815","North Dakota","Female","public","35.and.over",2990
+"816","Ohio","Female","public","35.and.over",80981
+"817","Oklahoma","Female","public","35.and.over",21760
+"818","Oregon","Female","public","35.and.over",28106
+"819","Pennsylvania","Female","public","35.and.over",59076
+"820","Rhode Island","Female","public","35.and.over",5989
+"821","South Carolina","Female","public","35.and.over",31308
+"822","South Dakota","Female","public","35.and.over",4640
+"823","Tennessee","Female","public","35.and.over",34374
+"824","Texas","Female","public","35.and.over",149241
+"825","Utah","Female","public","35.and.over",16519
+"826","Vermont","Female","public","35.and.over",3474
+"827","Virginia","Female","public","35.and.over",56575
+"828","Washington","Female","public","35.and.over",44835
+"829","West Virginia","Female","public","35.and.over",9953
+"830","Wisconsin","Female","public","35.and.over",35851
+"831","Wyoming","Female","public","35.and.over",4987
+"832","Puerto Rico","Female","public","35.and.over",5716
+"833","Alabama","Female","private","15.to.17",68
+"834","Alaska","Female","private","15.to.17",14
+"835","Arizona","Female","private","15.to.17",128
+"836","Arkansas","Female","private","15.to.17",81
+"837","California","Female","private","15.to.17",1802
+"838","Colorado","Female","private","15.to.17",125
+"839","Connecticut","Female","private","15.to.17",501
+"840","Delaware","Female","private","15.to.17",0
+"841","District of Columbia","Female","private","15.to.17",91
+"842","Florida","Female","private","15.to.17",1307
+"843","Georgia","Female","private","15.to.17",345
+"844","Hawaii","Female","private","15.to.17",53
+"845","Idaho","Female","private","15.to.17",113
+"846","Illinois","Female","private","15.to.17",584
+"847","Indiana","Female","private","15.to.17",108
+"848","Iowa","Female","private","15.to.17",146
+"849","Kansas","Female","private","15.to.17",10
+"850","Kentucky","Female","private","15.to.17",272
+"851","Louisiana","Female","private","15.to.17",225
+"852","Maine","Female","private","15.to.17",111
+"853","Maryland","Female","private","15.to.17",778
+"854","Massachusetts","Female","private","15.to.17",1323
+"855","Michigan","Female","private","15.to.17",308
+"856","Minnesota","Female","private","15.to.17",185
+"857","Mississippi","Female","private","15.to.17",111
+"858","Missouri","Female","private","15.to.17",207
+"859","Montana","Female","private","15.to.17",28
+"860","Nebraska","Female","private","15.to.17",49
+"861","Nevada","Female","private","15.to.17",53
+"862","New Hampshire","Female","private","15.to.17",132
+"863","New Jersey","Female","private","15.to.17",470
+"864","New Mexico","Female","private","15.to.17",70
+"865","New York","Female","private","15.to.17",3080
+"866","North Carolina","Female","private","15.to.17",497
+"867","North Dakota","Female","private","15.to.17",0
+"868","Ohio","Female","private","15.to.17",560
+"869","Oklahoma","Female","private","15.to.17",85
+"870","Oregon","Female","private","15.to.17",82
+"871","Pennsylvania","Female","private","15.to.17",962
+"872","Rhode Island","Female","private","15.to.17",155
+"873","South Carolina","Female","private","15.to.17",190
+"874","South Dakota","Female","private","15.to.17",5
+"875","Tennessee","Female","private","15.to.17",206
+"876","Texas","Female","private","15.to.17",736
+"877","Utah","Female","private","15.to.17",248
+"878","Vermont","Female","private","15.to.17",41
+"879","Virginia","Female","private","15.to.17",489
+"880","Washington","Female","private","15.to.17",148
+"881","West Virginia","Female","private","15.to.17",52
+"882","Wisconsin","Female","private","15.to.17",83
+"883","Wyoming","Female","private","15.to.17",10
+"884","Puerto Rico","Female","private","15.to.17",1421
+"885","Alabama","Female","private","18.to.24",15671
+"886","Alaska","Female","private","18.to.24",1454
+"887","Arizona","Female","private","18.to.24",11955
+"888","Arkansas","Female","private","18.to.24",8918
+"889","California","Female","private","18.to.24",154836
+"890","Colorado","Female","private","18.to.24",16482
+"891","Connecticut","Female","private","18.to.24",34512
+"892","Delaware","Female","private","18.to.24",4178
+"893","District of Columbia","Female","private","18.to.24",20098
+"894","Florida","Female","private","18.to.24",78103
+"895","Georgia","Female","private","18.to.24",42306
+"896","Hawaii","Female","private","18.to.24",6669
+"897","Idaho","Female","private","18.to.24",9484
+"898","Illinois","Female","private","18.to.24",90574
+"899","Indiana","Female","private","18.to.24",36443
+"900","Iowa","Female","private","18.to.24",22745
+"901","Kansas","Female","private","18.to.24",8448
+"902","Kentucky","Female","private","18.to.24",15194
+"903","Louisiana","Female","private","18.to.24",17139
+"904","Maine","Female","private","18.to.24",8560
+"905","Maryland","Female","private","18.to.24",30695
+"906","Massachusetts","Female","private","18.to.24",112161
+"907","Michigan","Female","private","18.to.24",36716
+"908","Minnesota","Female","private","18.to.24",34989
+"909","Mississippi","Female","private","18.to.24",8151
+"910","Missouri","Female","private","18.to.24",35441
+"911","Montana","Female","private","18.to.24",2429
+"912","Nebraska","Female","private","18.to.24",11499
+"913","Nevada","Female","private","18.to.24",5836
+"914","New Hampshire","Female","private","18.to.24",12380
+"915","New Jersey","Female","private","18.to.24",55067
+"916","New Mexico","Female","private","18.to.24",4073
+"917","New York","Female","private","18.to.24",206319
+"918","North Carolina","Female","private","18.to.24",41180
+"919","North Dakota","Female","private","18.to.24",2630
+"920","Ohio","Female","private","18.to.24",64258
+"921","Oklahoma","Female","private","18.to.24",11378
+"922","Oregon","Female","private","18.to.24",15543
+"923","Pennsylvania","Female","private","18.to.24",132906
+"924","Rhode Island","Female","private","18.to.24",16945
+"925","South Carolina","Female","private","18.to.24",22717
+"926","South Dakota","Female","private","18.to.24",3145
+"927","Tennessee","Female","private","18.to.24",30941
+"928","Texas","Female","private","18.to.24",80017
+"929","Utah","Female","private","18.to.24",22894
+"930","Vermont","Female","private","18.to.24",5980
+"931","Virginia","Female","private","18.to.24",40897
+"932","Washington","Female","private","18.to.24",25245
+"933","West Virginia","Female","private","18.to.24",5713
+"934","Wisconsin","Female","private","18.to.24",27625
+"935","Wyoming","Female","private","18.to.24",802
+"936","Puerto Rico","Female","private","18.to.24",54602
+"937","Alabama","Female","private","25.to.34",6785
+"938","Alaska","Female","private","25.to.34",1368
+"939","Arizona","Female","private","25.to.34",13738
+"940","Arkansas","Female","private","25.to.34",3713
+"941","California","Female","private","25.to.34",106102
+"942","Colorado","Female","private","25.to.34",11750
+"943","Connecticut","Female","private","25.to.34",12456
+"944","Delaware","Female","private","25.to.34",2187
+"945","District of Columbia","Female","private","25.to.34",6927
+"946","Florida","Female","private","25.to.34",53443
+"947","Georgia","Female","private","25.to.34",26521
+"948","Hawaii","Female","private","25.to.34",4105
+"949","Idaho","Female","private","25.to.34",2631
+"950","Illinois","Female","private","25.to.34",51692
+"951","Indiana","Female","private","25.to.34",12149
+"952","Iowa","Female","private","25.to.34",6555
+"953","Kansas","Female","private","25.to.34",5067
+"954","Kentucky","Female","private","25.to.34",7879
+"955","Louisiana","Female","private","25.to.34",8919
+"956","Maine","Female","private","25.to.34",2729
+"957","Maryland","Female","private","25.to.34",20407
+"958","Massachusetts","Female","private","25.to.34",36213
+"959","Michigan","Female","private","25.to.34",20328
+"960","Minnesota","Female","private","25.to.34",14425
+"961","Mississippi","Female","private","25.to.34",5002
+"962","Missouri","Female","private","25.to.34",18649
+"963","Montana","Female","private","25.to.34",1112
+"964","Nebraska","Female","private","25.to.34",4561
+"965","Nevada","Female","private","25.to.34",5490
+"966","New Hampshire","Female","private","25.to.34",3771
+"967","New Jersey","Female","private","25.to.34",25684
+"968","New Mexico","Female","private","25.to.34",3159
+"969","New York","Female","private","25.to.34",86372
+"970","North Carolina","Female","private","25.to.34",20222
+"971","North Dakota","Female","private","25.to.34",1097
+"972","Ohio","Female","private","25.to.34",27585
+"973","Oklahoma","Female","private","25.to.34",6272
+"974","Oregon","Female","private","25.to.34",7666
+"975","Pennsylvania","Female","private","25.to.34",42354
+"976","Rhode Island","Female","private","25.to.34",3667
+"977","South Carolina","Female","private","25.to.34",8965
+"978","South Dakota","Female","private","25.to.34",1053
+"979","Tennessee","Female","private","25.to.34",14337
+"980","Texas","Female","private","25.to.34",42247
+"981","Utah","Female","private","25.to.34",5978
+"982","Vermont","Female","private","25.to.34",1682
+"983","Virginia","Female","private","25.to.34",22586
+"984","Washington","Female","private","25.to.34",12531
+"985","West Virginia","Female","private","25.to.34",2431
+"986","Wisconsin","Female","private","25.to.34",13492
+"987","Wyoming","Female","private","25.to.34",657
+"988","Puerto Rico","Female","private","25.to.34",25374
+"989","Alabama","Female","private","35.and.over",7419
+"990","Alaska","Female","private","35.and.over",1909
+"991","Arizona","Female","private","35.and.over",16751
+"992","Arkansas","Female","private","35.and.over",4420
+"993","California","Female","private","35.and.over",96017
+"994","Colorado","Female","private","35.and.over",14994
+"995","Connecticut","Female","private","35.and.over",12685
+"996","Delaware","Female","private","35.and.over",3146
+"997","District of Columbia","Female","private","35.and.over",2868
+"998","Florida","Female","private","35.and.over",59826
+"999","Georgia","Female","private","35.and.over",34360
+"1000","Hawaii","Female","private","35.and.over",4041
+"1001","Idaho","Female","private","35.and.over",3505
+"1002","Illinois","Female","private","35.and.over",39373
+"1003","Indiana","Female","private","35.and.over",14076
+"1004","Iowa","Female","private","35.and.over",7051
+"1005","Kansas","Female","private","35.and.over",6232
+"1006","Kentucky","Female","private","35.and.over",8481
+"1007","Louisiana","Female","private","35.and.over",7781
+"1008","Maine","Female","private","35.and.over",4087
+"1009","Maryland","Female","private","35.and.over",21720
+"1010","Massachusetts","Female","private","35.and.over",24573
+"1011","Michigan","Female","private","35.and.over",24024
+"1012","Minnesota","Female","private","35.and.over",14347
+"1013","Mississippi","Female","private","35.and.over",5586
+"1014","Missouri","Female","private","35.and.over",16754
+"1015","Montana","Female","private","35.and.over",1270
+"1016","Nebraska","Female","private","35.and.over",3741
+"1017","Nevada","Female","private","35.and.over",7182
+"1018","New Hampshire","Female","private","35.and.over",4486
+"1019","New Jersey","Female","private","35.and.over",26097
+"1020","New Mexico","Female","private","35.and.over",4027
+"1021","New York","Female","private","35.and.over",65785
+"1022","North Carolina","Female","private","35.and.over",22937
+"1023","North Dakota","Female","private","35.and.over",1049
+"1024","Ohio","Female","private","35.and.over",31106
+"1025","Oklahoma","Female","private","35.and.over",6445
+"1026","Oregon","Female","private","35.and.over",8944
+"1027","Pennsylvania","Female","private","35.and.over",40836
+"1028","Rhode Island","Female","private","35.and.over",3054
+"1029","South Carolina","Female","private","35.and.over",10363
+"1030","South Dakota","Female","private","35.and.over",1568
+"1031","Tennessee","Female","private","35.and.over",14677
+"1032","Texas","Female","private","35.and.over",45564
+"1033","Utah","Female","private","35.and.over",5407
+"1034","Vermont","Female","private","35.and.over",1715
+"1035","Virginia","Female","private","35.and.over",26261
+"1036","Washington","Female","private","35.and.over",14482
+"1037","West Virginia","Female","private","35.and.over",3388
+"1038","Wisconsin","Female","private","35.and.over",16574
+"1039","Wyoming","Female","private","35.and.over",859
+"1040","Puerto Rico","Female","private","35.and.over",16489
+"1041","Alabama","Female","not enrolled","15.to.17",94790
+"1042","Alaska","Female","not enrolled","15.to.17",15116
+"1043","Arizona","Female","not enrolled","15.to.17",129668
+"1044","Arkansas","Female","not enrolled","15.to.17",57274
+"1045","California","Female","not enrolled","15.to.17",790811
+"1046","Colorado","Female","not enrolled","15.to.17",96040
+"1047","Connecticut","Female","not enrolled","15.to.17",72223
+"1048","Delaware","Female","not enrolled","15.to.17",17335
+"1049","District of Columbia","Female","not enrolled","15.to.17",8357
+"1050","Florida","Female","not enrolled","15.to.17",341608
+"1051","Georgia","Female","not enrolled","15.to.17",200727
+"1052","Hawaii","Female","not enrolled","15.to.17",24463
+"1053","Idaho","Female","not enrolled","15.to.17",32468
+"1054","Illinois","Female","not enrolled","15.to.17",264928
+"1055","Indiana","Female","not enrolled","15.to.17",133647
+"1056","Iowa","Female","not enrolled","15.to.17",60616
+"1057","Kansas","Female","not enrolled","15.to.17",57068
+"1058","Kentucky","Female","not enrolled","15.to.17",82512
+"1059","Louisiana","Female","not enrolled","15.to.17",91398
+"1060","Maine","Female","not enrolled","15.to.17",24937
+"1061","Maryland","Female","not enrolled","15.to.17",114925
+"1062","Massachusetts","Female","not enrolled","15.to.17",124033
+"1063","Michigan","Female","not enrolled","15.to.17",207896
+"1064","Minnesota","Female","not enrolled","15.to.17",105606
+"1065","Mississippi","Female","not enrolled","15.to.17",63856
+"1066","Missouri","Female","not enrolled","15.to.17",119348
+"1067","Montana","Female","not enrolled","15.to.17",18940
+"1068","Nebraska","Female","not enrolled","15.to.17",36382
+"1069","Nevada","Female","not enrolled","15.to.17",53420
+"1070","New Hampshire","Female","not enrolled","15.to.17",26280
+"1071","New Jersey","Female","not enrolled","15.to.17",177772
+"1072","New Mexico","Female","not enrolled","15.to.17",41955
+"1073","New York","Female","not enrolled","15.to.17",375793
+"1074","North Carolina","Female","not enrolled","15.to.17",182313
+"1075","North Dakota","Female","not enrolled","15.to.17",12116
+"1076","Ohio","Female","not enrolled","15.to.17",234489
+"1077","Oklahoma","Female","not enrolled","15.to.17",73348
+"1078","Oregon","Female","not enrolled","15.to.17",71677
+"1079","Pennsylvania","Female","not enrolled","15.to.17",246766
+"1080","Rhode Island","Female","not enrolled","15.to.17",19906
+"1081","South Carolina","Female","not enrolled","15.to.17",88685
+"1082","South Dakota","Female","not enrolled","15.to.17",16504
+"1083","Tennessee","Female","not enrolled","15.to.17",123299
+"1084","Texas","Female","not enrolled","15.to.17",538856
+"1085","Utah","Female","not enrolled","15.to.17",62123
+"1086","Vermont","Female","not enrolled","15.to.17",11968
+"1087","Virginia","Female","not enrolled","15.to.17",152346
+"1088","Washington","Female","not enrolled","15.to.17",130723
+"1089","West Virginia","Female","not enrolled","15.to.17",32587
+"1090","Wisconsin","Female","not enrolled","15.to.17",113650
+"1091","Wyoming","Female","not enrolled","15.to.17",10470
+"1092","Puerto Rico","Female","not enrolled","15.to.17",79468
+"1093","Alabama","Female","not enrolled","18.to.24",131142
+"1094","Alaska","Female","not enrolled","18.to.24",23822
+"1095","Arizona","Female","not enrolled","18.to.24",179901
+"1096","Arkansas","Female","not enrolled","18.to.24",83267
+"1097","California","Female","not enrolled","18.to.24",950236
+"1098","Colorado","Female","not enrolled","18.to.24",130618
+"1099","Connecticut","Female","not enrolled","18.to.24",73385
+"1100","Delaware","Female","not enrolled","18.to.24",21900
+"1101","District of Columbia","Female","not enrolled","18.to.24",21106
+"1102","Florida","Female","not enrolled","18.to.24",452353
+"1103","Georgia","Female","not enrolled","18.to.24",266032
+"1104","Hawaii","Female","not enrolled","18.to.24",33912
+"1105","Idaho","Female","not enrolled","18.to.24",44827
+"1106","Illinois","Female","not enrolled","18.to.24",316353
+"1107","Indiana","Female","not enrolled","18.to.24",172842
+"1108","Iowa","Female","not enrolled","18.to.24",73982
+"1109","Kansas","Female","not enrolled","18.to.24",72222
+"1110","Kentucky","Female","not enrolled","18.to.24",112523
+"1111","Louisiana","Female","not enrolled","18.to.24",137658
+"1112","Maine","Female","not enrolled","18.to.24",29868
+"1113","Maryland","Female","not enrolled","18.to.24",139995
+"1114","Massachusetts","Female","not enrolled","18.to.24",140624
+"1115","Michigan","Female","not enrolled","18.to.24",235840
+"1116","Minnesota","Female","not enrolled","18.to.24",125447
+"1117","Mississippi","Female","not enrolled","18.to.24",80699
+"1118","Missouri","Female","not enrolled","18.to.24",159638
+"1119","Montana","Female","not enrolled","18.to.24",27109
+"1120","Nebraska","Female","not enrolled","18.to.24",43610
+"1121","Nevada","Female","not enrolled","18.to.24",78299
+"1122","New Hampshire","Female","not enrolled","18.to.24",29093
+"1123","New Jersey","Female","not enrolled","18.to.24",183547
+"1124","New Mexico","Female","not enrolled","18.to.24",58870
+"1125","New York","Female","not enrolled","18.to.24",469553
+"1126","North Carolina","Female","not enrolled","18.to.24",248642
+"1127","North Dakota","Female","not enrolled","18.to.24",17960
+"1128","Ohio","Female","not enrolled","18.to.24",283321
+"1129","Oklahoma","Female","not enrolled","18.to.24",110777
+"1130","Oregon","Female","not enrolled","18.to.24",100124
+"1131","Pennsylvania","Female","not enrolled","18.to.24",302791
+"1132","Rhode Island","Female","not enrolled","18.to.24",23544
+"1133","South Carolina","Female","not enrolled","18.to.24",130588
+"1134","South Dakota","Female","not enrolled","18.to.24",21423
+"1135","Tennessee","Female","not enrolled","18.to.24",176165
+"1136","Texas","Female","not enrolled","18.to.24",737029
+"1137","Utah","Female","not enrolled","18.to.24",89346
+"1138","Vermont","Female","not enrolled","18.to.24",14228
+"1139","Virginia","Female","not enrolled","18.to.24",201396
+"1140","Washington","Female","not enrolled","18.to.24",187480
+"1141","West Virginia","Female","not enrolled","18.to.24",46323
+"1142","Wisconsin","Female","not enrolled","18.to.24",136816
+"1143","Wyoming","Female","not enrolled","18.to.24",15354
+"1144","Puerto Rico","Female","not enrolled","18.to.24",87317
+"1145","Alabama","Female","not enrolled","25.to.34",265569
+"1146","Alaska","Female","not enrolled","25.to.34",41746
+"1147","Arizona","Female","not enrolled","25.to.34",357522
+"1148","Arkansas","Female","not enrolled","25.to.34",161359
+"1149","California","Female","not enrolled","25.to.34",2206109
+"1150","Colorado","Female","not enrolled","25.to.34",302351
+"1151","Connecticut","Female","not enrolled","25.to.34",178163
+"1152","Delaware","Female","not enrolled","25.to.34",48427
+"1153","District of Columbia","Female","not enrolled","25.to.34",55576
+"1154","Florida","Female","not enrolled","25.to.34",963682
+"1155","Georgia","Female","not enrolled","25.to.34",571790
+"1156","Hawaii","Female","not enrolled","25.to.34",76017
+"1157","Idaho","Female","not enrolled","25.to.34",88285
+"1158","Illinois","Female","not enrolled","25.to.34",750929
+"1159","Indiana","Female","not enrolled","25.to.34",351783
+"1160","Iowa","Female","not enrolled","25.to.34",160200
+"1161","Kansas","Female","not enrolled","25.to.34",156889
+"1162","Kentucky","Female","not enrolled","25.to.34",239547
+"1163","Louisiana","Female","not enrolled","25.to.34",270439
+"1164","Maine","Female","not enrolled","25.to.34",62908
+"1165","Maryland","Female","not enrolled","25.to.34",319597
+"1166","Massachusetts","Female","not enrolled","25.to.34",362872
+"1167","Michigan","Female","not enrolled","25.to.34",483808
+"1168","Minnesota","Female","not enrolled","25.to.34",301888
+"1169","Mississippi","Female","not enrolled","25.to.34",164552
+"1170","Missouri","Female","not enrolled","25.to.34",327823
+"1171","Montana","Female","not enrolled","25.to.34",50858
+"1172","Nebraska","Female","not enrolled","25.to.34",101540
+"1173","Nevada","Female","not enrolled","25.to.34",164871
+"1174","New Hampshire","Female","not enrolled","25.to.34",63066
+"1175","New Jersey","Female","not enrolled","25.to.34",483985
+"1176","New Mexico","Female","not enrolled","25.to.34",107754
+"1177","New York","Female","not enrolled","25.to.34",1159416
+"1178","North Carolina","Female","not enrolled","25.to.34",534061
+"1179","North Dakota","Female","not enrolled","25.to.34",36430
+"1180","Ohio","Female","not enrolled","25.to.34",595943
+"1181","Oklahoma","Female","not enrolled","25.to.34",211863
+"1182","Oregon","Female","not enrolled","25.to.34",220403
+"1183","Pennsylvania","Female","not enrolled","25.to.34",653957
+"1184","Rhode Island","Female","not enrolled","25.to.34",53746
+"1185","South Carolina","Female","not enrolled","25.to.34",254890
+"1186","South Dakota","Female","not enrolled","25.to.34",43999
+"1187","Tennessee","Female","not enrolled","25.to.34",361686
+"1188","Texas","Female","not enrolled","25.to.34",1550715
+"1189","Utah","Female","not enrolled","25.to.34",189317
+"1190","Vermont","Female","not enrolled","25.to.34",29630
+"1191","Virginia","Female","not enrolled","25.to.34",460225
+"1192","Washington","Female","not enrolled","25.to.34",399225
+"1193","West Virginia","Female","not enrolled","25.to.34",94544
+"1194","Wisconsin","Female","not enrolled","25.to.34",299966
+"1195","Wyoming","Female","not enrolled","25.to.34",31522
+"1196","Puerto Rico","Female","not enrolled","25.to.34",218242
+"1197","Alabama","Female","not enrolled","35.and.over",1323106
+"1198","Alaska","Female","not enrolled","35.and.over",157652
+"1199","Arizona","Female","not enrolled","35.and.over",1635790
+"1200","Arkansas","Female","not enrolled","35.and.over",785876
+"1201","California","Female","not enrolled","35.and.over",9381961
+"1202","Colorado","Female","not enrolled","35.and.over",1279422
+"1203","Connecticut","Female","not enrolled","35.and.over",1034174
+"1204","Delaware","Female","not enrolled","35.and.over",251917
+"1205","District of Columbia","Female","not enrolled","35.and.over",149300
+"1206","Florida","Female","not enrolled","35.and.over",5525212
+"1207","Georgia","Female","not enrolled","35.and.over",2485152
+"1208","Hawaii","Female","not enrolled","35.and.over",368713
+"1209","Idaho","Female","not enrolled","35.and.over",381280
+"1210","Illinois","Female","not enrolled","35.and.over",3400937
+"1211","Indiana","Female","not enrolled","35.and.over",1722154
+"1212","Iowa","Female","not enrolled","35.and.over",825465
+"1213","Kansas","Female","not enrolled","35.and.over",735226
+"1214","Kentucky","Female","not enrolled","35.and.over",1189983
+"1215","Louisiana","Female","not enrolled","35.and.over",1190249
+"1216","Maine","Female","not enrolled","35.and.over",402345
+"1217","Maryland","Female","not enrolled","35.and.over",1588765
+"1218","Massachusetts","Female","not enrolled","35.and.over",1863672
+"1219","Michigan","Female","not enrolled","35.and.over",2728656
+"1220","Minnesota","Female","not enrolled","35.and.over",1405069
+"1221","Mississippi","Female","not enrolled","35.and.over",784532
+"1222","Missouri","Female","not enrolled","35.and.over",1629261
+"1223","Montana","Female","not enrolled","35.and.over",273005
+"1224","Nebraska","Female","not enrolled","35.and.over",472084
+"1225","Nevada","Female","not enrolled","35.and.over",680180
+"1226","New Hampshire","Female","not enrolled","35.and.over",383073
+"1227","New Jersey","Female","not enrolled","35.and.over",2510682
+"1228","New Mexico","Female","not enrolled","35.and.over",532207
+"1229","New York","Female","not enrolled","35.and.over",5418104
+"1230","North Carolina","Female","not enrolled","35.and.over",2587023
+"1231","North Dakota","Female","not enrolled","35.and.over",175550
+"1232","Ohio","Female","not enrolled","35.and.over",3205801
+"1233","Oklahoma","Female","not enrolled","35.and.over",980306
+"1234","Oregon","Female","not enrolled","35.and.over",1043123
+"1235","Pennsylvania","Female","not enrolled","35.and.over",3672404
+"1236","Rhode Island","Female","not enrolled","35.and.over",302266
+"1237","South Carolina","Female","not enrolled","35.and.over",1275643
+"1238","South Dakota","Female","not enrolled","35.and.over",212426
+"1239","Tennessee","Female","not enrolled","35.and.over",1756596
+"1240","Texas","Female","not enrolled","35.and.over",6104738
+"1241","Utah","Female","not enrolled","35.and.over",556745
+"1242","Vermont","Female","not enrolled","35.and.over",183152
+"1243","Virginia","Female","not enrolled","35.and.over",2155342
+"1244","Washington","Female","not enrolled","35.and.over",1774635
+"1245","West Virginia","Female","not enrolled","35.and.over",544830
+"1246","Wisconsin","Female","not enrolled","35.and.over",1536859
+"1247","Wyoming","Female","not enrolled","35.and.over",141540
+"1248","Puerto Rico","Female","not enrolled","35.and.over",1036420

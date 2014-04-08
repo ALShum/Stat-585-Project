@@ -72,3 +72,6 @@ total = combine_tables(total, other, `+`)
 
 total_pct = get_pct(total, 'total')
 qplot(total, reorder(state, total), data=total_pct)
+
+write.csv(?????????????????,'foodstamps.csv')
+

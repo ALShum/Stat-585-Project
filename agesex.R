@@ -40,3 +40,17 @@ levels(agesex$age) = gsub(".years", "", levels(agesex$age))
 
 
 qplot(age, freq, data=subset(agesex, state=="California"), color=gender) + coord_flip()
+
+#write.csv(agesex,'agesex.csv')
+
+
+
+
+
+
+
+
+
+
+
+

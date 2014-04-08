@@ -38,4 +38,12 @@ univ$age = gsub(".years", "", univ$age)
 
 qplot(public, reorder(state, public), data = get_pct(univ.orig))
 
+#write.csv(univ,'school.csv')
+
+
+
+
+
+
+
 
