@@ -41,15 +41,17 @@ levels(agesex$age) = gsub(".years", "", levels(agesex$age))
 
 qplot(age, freq, data=subset(agesex, state=="California"), color=gender) + coord_flip()
 
-#write.csv(agesex,'agesex.csv')
 
 
 
 
 
+qplot(data=subset(test, gender=='Male'), x = age, y = freq, geom="bar", stat = "identity") + coord_flip()
 
-
-
+ggplot(data = subset(agesex, state=="Washington"), aes(x = age, y = freq, fill=gender)) +
+  coord_flip() + geom_bar(subset = .(gender=="Female"), stat="identity") +
+  geom_bar(subset = .(gender=="Male"), stat="identity", aes(y=-freq))
+  
 
 
 
