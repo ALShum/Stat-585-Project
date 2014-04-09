@@ -39,6 +39,7 @@ health.melt = melt(health.df, id='state')
 healthcols = ldply(strsplit(as.character(health.melt$variable), "\\.\\."))
 healthincome = data.frame(state = health.melt$state, income = healthcols$V1, 
                        coverage = healthcols$V2, freq = health.melt$value)
+healthincome$income = factor(healthincome$income, levels(healthincome$income)[c(5,2:4,1)])
 
 
 
