@@ -84,11 +84,10 @@ levels(emp$age) = gsub(".years", "", levels(emp$age))
 emp = ddply(emp, .(state), transform,
                state_total = sum(freq))
 empgender = ddply(emp, .(state, age, type), summarise, 
-      freq = mean(freq),
-      state_total = sum(freq))
-
+      freq = sum(freq),
+      state_total = state_total)
 empage = ddply(emp, .(state, gender, type), summarise, 
-               freq = mean(freq),
+               freq = sum(freq),
                state_total = sum(freq))
 
 # Filter by type ignore gender
