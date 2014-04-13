@@ -3,6 +3,8 @@ library(ggplot2)
 library(reshape2)
 library(plyr)
 library(dplyr)
+library(stringr)
+library(rCharts)
 
 #B23001 - Sex by Age by Employment Status for the Population 16 Years and over
 # age bracket 0-15, *16-24*, *25-34*, 35-44, 45-54, *55-64*, *65-74*, 75*
@@ -75,14 +77,39 @@ emp = data.frame(state = employ.melt$state, gender = employcols$V1,
 emp$age = factor(emp$age)
 levels(emp$age) = gsub(".years", "", levels(emp$age))
 
-qplot(freq, reorder(state, freq), data=filter(emp,type == 'Employed'),
-      colour = age, shape = gender)
+
+
+
+# Add total
+emp = ddply(emp, .(state), transform,
+               state_total = sum(freq))
+empgender = ddply(emp, .(state, age, type), summarise, 
+      freq = mean(freq),
+      state_total = sum(freq))
+
+empage = ddply(emp, .(state, gender, type), summarise, 
+               freq = mean(freq),
+               state_total = sum(freq))
+
+# Filter by type ignore gender
+qplot(freq/state_total, reorder(state, state_total), 
+      data=subset(empgender, type == 'Employed'), colour = age)
+
+# Filter by type ignore age
+qplot(freq/state_total, reorder(state, state_total), 
+      data=subset(empage, type == 'Employed'), colour = gender)
+
+# Filter by type facet by gender
+qplot(freq/state_total, reorder(state, state_total), 
+      data=subset(emp, type == 'Employed'), 
+      colour = age, facets = ~gender)
+
+# Filter by type facet by age
+qplot(freq/state_total, reorder(state, state_total), 
+      data=subset(emp, type == 'Employed'), 
+      colour = gender, facets = ~age)
 
 #write.csv(emp,'emptotal.csv')
-
-
-
-
 
 
 

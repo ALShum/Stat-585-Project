@@ -38,16 +38,16 @@ agesex = data.frame(state = age.melt$state, gender = agecols$gender,
 agesex$age = factor(agesex$age, levels(agesex$age)[c(18, 9, 1:8, 10:17)])
 levels(agesex$age) = gsub(".years", "", levels(agesex$age))
 
+# Add total
+agesex = ddply(agesex, .(state), transform,
+               state_total = sum(freq))
 
-qplot(age, freq, data=subset(agesex, state=="California"), color=gender) + coord_flip()
+# Pyramid Plot default (all states)
+ggplot(data = agesex, aes(x = age, y = freq, fill=gender)) +
+  coord_flip() + geom_bar(subset = .(gender=="Female"), stat="identity") +
+  geom_bar(subset = .(gender=="Male"), stat="identity", aes(y=-freq))
 
-
-
-
-
-
-qplot(data=subset(test, gender=='Male'), x = age, y = freq, geom="bar", stat = "identity") + coord_flip()
-
+# Pyramid plot filter by state
 ggplot(data = subset(agesex, state=="Washington"), aes(x = age, y = freq, fill=gender)) +
   coord_flip() + geom_bar(subset = .(gender=="Female"), stat="identity") +
   geom_bar(subset = .(gender=="Male"), stat="identity", aes(y=-freq))
