@@ -80,7 +80,7 @@ levels(emp$age) = gsub(".years", "", levels(emp$age))
 
 
 
-# Add total
+# Make new datasets
 emp = ddply(emp, .(state), transform,
                state_total = sum(freq))
 empgender = ddply(emp, .(state, age, type), summarise, 
@@ -88,7 +88,7 @@ empgender = ddply(emp, .(state, age, type), summarise,
       state_total = state_total)
 empage = ddply(emp, .(state, gender, type), summarise, 
                freq = sum(freq),
-               state_total = sum(freq))
+               state_total = state_total)
 
 # Filter by type ignore gender
 qplot(freq/state_total, reorder(state, state_total), 
