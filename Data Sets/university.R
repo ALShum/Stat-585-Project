@@ -33,13 +33,28 @@ univ = data.frame(state = dat$state,
                   freq = dat.melt$value)
 levels(univ$school) = c("private", "public", "not enrolled")
 univ$age = gsub(".years", "", univ$age)
-#univ = dataframe reshaped#
+univ$age = as.factor(univ$age)
 
+# Plot percentage below by state on state map
+univ = ddply(univ, .(state), transform,
+            state_total = sum(freq))
+univstate = ddply(univ, .(state,school), summarise,
+                 total = sum(freq),
+                 state_total = state_total)
 
-qplot(public, reorder(state, public), data = get_pct(univ.orig))
+# Plot percentage below by state and gender
+univ = ddply(univ, .(state,gender), transform,
+            state_total = sum(freq))
+univgender = ddply(univ, .(state, gender, school), summarise, 
+                 freq = sum(freq),
+                 state_total = state_total)
 
-#write.csv(univ,'school.csv')
-
+# Plot percentage below by state and age
+univ = ddply(univ, .(state,age), transform,
+            state_total = sum(freq))
+univage = ddply(univ, .(state, age, school), summarise, 
+              freq = sum(freq),
+              state_total = state_total)
 
 
 

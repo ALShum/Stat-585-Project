@@ -26,4 +26,32 @@ povertycols = ldply(strsplit(as.character(poverty.melt$variable), "\\.\\."))
 pov = data.frame(state = poverty.melt$state, level = povertycols$V1, 
                     household = povertycols$V2, education = povertycols$V3, freq = poverty.melt$value)
 
-#write.csv(pov,'poverty.csv')
+# Plot percentage below by state on state map
+pov = ddply(pov, .(state), transform,
+                  state_total = sum(freq))
+povstate = ddply(pov, .(state,level), summarise,
+                    total = sum(freq),
+                    state_total = state_total)
+
+# Plot percentage below by state and household
+pov = ddply(pov, .(state,household), transform,
+                  state_total = sum(freq))
+povhouse = ddply(pov, .(state, household, level), summarise, 
+                  freq = sum(freq),
+                  state_total = state_total)
+
+# Plot percentage below by state and education
+pov = ddply(pov, .(state,education), transform,
+            state_total = sum(freq))
+poved = ddply(pov, .(state, education, level), summarise, 
+                 freq = sum(freq),
+                 state_total = state_total)
+
+
+
+
+
+
+
+
+

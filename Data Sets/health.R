@@ -40,7 +40,7 @@ healthincome = data.frame(state = health.melt$state, income = healthcols$V1,
 healthincome$income = factor(healthincome$income, levels(healthincome$income)[c(5,2:4,1)])
 
 
-# Plot percentage insured by state
+# Plot percentage insured by state on state map
 healthsex = ddply(healthsex, .(state), transform,
                   state_total = sum(freq))
 healthstate = ddply(healthsex, .(state,coverage), summarise,

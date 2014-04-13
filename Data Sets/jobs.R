@@ -83,10 +83,10 @@ levels(emp$age) = gsub(".years", "", levels(emp$age))
 # Make new datasets
 emp = ddply(emp, .(state), transform,
                state_total = sum(freq))
-empgender = ddply(emp, .(state, age, type), summarise, 
+empage = ddply(emp, .(state, age, type), summarise, 
       freq = sum(freq),
       state_total = state_total)
-empage = ddply(emp, .(state, gender, type), summarise, 
+empgender = ddply(emp, .(state, gender, type), summarise, 
                freq = sum(freq),
                state_total = state_total)
 
