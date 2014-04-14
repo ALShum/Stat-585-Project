@@ -62,6 +62,11 @@ qplot(freq/state_total, reorder(state, state_total),
       data=healthage, colour = age,  facets = ~coverage)
 
 
-
+#rcharts
+library(rCharts)
+p = dPlot(x = "state", y = "freq", groups = "age", data = subset(healthsex, coverage=="No"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
 
 

@@ -56,8 +56,13 @@ univage = ddply(univ, .(state, age, school), summarise,
               freq = sum(freq),
               state_total = state_total)
 
+#rcharts
+library(rCharts)
 
-
+p = dPlot(x = "state", y = "freq", groups = "school", data = subset(univ, age=="18.to.24"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
 
 
 

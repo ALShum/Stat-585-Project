@@ -58,11 +58,17 @@ names(h) = c("total", "SNAP", "no", "state")
 
 #combine tables to make more useful
 white = h
+white$race = "white"
 latino = combine_tables(a, h, `-`)
+latino$race = "latino"
 black = b
+black$race = "black"
 indian_pacific = combine_tables(c, e, `+`)
+indian_pacific$race = "indian/pacific"
 asian = d
+asian$race = "asian"
 other = combine_tables(f, g, `+`)
+other$race = "other"
 
 total = combine_tables(white, black, `+`)
 total = combine_tables(total, latino, `+`)
@@ -73,5 +79,29 @@ total = combine_tables(total, other, `+`)
 total_pct = get_pct(total, 'total')
 qplot(total, reorder(state, total), data=total_pct)
 
-write.csv(?????????????????,'foodstamps.csv')
 
+#rcharts
+library(rCharts)
+total.melt = melt(total, id = 'state')
+#food stamp by state
+p = dPlot(x = "state", y = "value", groups = "variable", data = subset(total.melt, variable != "total"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
+
+#food stamp broken down by race
+final = rbind(white, latino, black, indian_pacific, asian, other)
+final.melt = melt(final, id=c('state', 'race'))
+p = dPlot(x = "state", y = "SNAP", groups = "race", data = final, type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
+
+
+#same as above, flipped axis
+final = rbind(white, latino, black, indian_pacific, asian, other)
+final.melt = melt(final, id=c('state', 'race'))
+p = dPlot(x = "SNAP", y = "state", groups = "race", data = final, type = "bar")
+p$xAxis(type = "addPctAxis")
+p$yAxis(type = "addCategoryAxis", orderRule = "state")
+p
