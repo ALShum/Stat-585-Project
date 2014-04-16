@@ -1,55 +1,75 @@
 library(shiny)
-
 shinyUI(fluidPage(
   
   #title
   titlePanel("EasieR Stats"),
   
   #main
-  sidebarLayout(
-    
+  sidebarLayout(  
     
     sidebarPanel(
-      conditionalPanel(condition = "input.selectCategory=='Economic'",
-        selectInput("econVariable", "Economic Variables",
-          c("Median Income", "Poverty Status", "Food Stamp", "Employment")
+      selectInput("stateVariable", "State",
+                  c("All", "Texas", "Utah")            
+      ),    
+      
+      conditionalPanel(condition = "input.selectCategory=='Age'",
+        selectInput("ageVariable", "States",
+          c("Blah", "test")
         )
       ),
       
-      conditionalPanel(condition = "input.selectCategory=='Housing'",
-        selectInput("houseVariable", "Housing Variables",
-          c("Median Rent", "Occupancy Rates")            
-        )
-      ),
-      
-      conditionalPanel(condition = "input.selectCategory=='People'",
-        selectInput("peopleVariable", "Demographic Variables",
-          c("Age", "Race")            
-        )
-      ),
-      
-      conditionalPanel(condition = "input.selectCategory=='Education'",
-        selectInput("eduVariable", "Education Variables",
-          c("Education Attainment", "Field of Degree")      
+      conditionalPanel(condition = "input.selectCategory=='Food Stamps'",
+        selectInput("foodVariable", "Race",
+          c("Total", "Asian", "Black", "Latino", "Indian/Pacific Islander", "White", "Other")            
         )
       ),
       
       conditionalPanel(condition = "input.selectCategory=='Healthcare'",
         selectInput("healthVariable", "Healthcare Variables",
-          c("Healthcare Coverage")            
+          c("Total", "By Age", "By Income")            
+        )
+      ),
+      
+      conditionalPanel(condition = "input.selectCategory=='Income'",
+        selectInput("genderVariable", "Gender",
+          c("Male", "Female")      
+        ),
+        selectInput("incomeVariable", "Full/Part",
+          c("Full-time", "Part-time")           
+        )
+      ),
+      
+      conditionalPanel(condition = "input.selectCategory=='Jobs'",
+        selectInput("jobsVariable", "Job Variables",
+          c("Total", "By Age", "By Gender")            
+        )
+      ),
+      
+      conditionalPanel(condition = "input.selectCategory=='Poverty'",
+        selectInput("povertyVariable", "Poverty Variables",
+          c("Total", "By Type", "By Education")            
+        )
+      ),
+      
+      conditionalPanel(condition = "input.selectCategory=='University'",
+        selectInput("univVariable", "University Variables",
+          c("Total", "By Gender", "By Age Group")            
         )
       )
+      
       
     #//sidebarPanel  
     ),
     
     mainPanel(
       tabsetPanel(id="selectCategory",
-        tabPanel("Economic"),
-        tabPanel("Housing"),
-        tabPanel("People"),
-        tabPanel("Education"),
-        tabPanel("Healthcare")
+        tabPanel("Age"),
+        tabPanel("Food Stamps"),
+        tabPanel("Healthcare"),
+        tabPanel("Income"),
+        tabPanel("Jobs"),
+        tabPanel("Poverty"),
+        tabPanel("University")
       )
     
     #//mainPanel
