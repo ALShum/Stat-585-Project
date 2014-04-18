@@ -99,8 +99,9 @@ p
 
 
 #same as above, flipped axis
-final = rbind(white, latino, black, indian_pacific, asian, other)
-final.melt = melt(final, id=c('state', 'race'))
+food = rbind(white, latino, black, indian_pacific, asian, other)
+foodtable = food
+final.melt = melt(food, id=c('state', 'race'))
 p = dPlot(x = "SNAP", y = "state", groups = "race", data = final, type = "bar")
 p$xAxis(type = "addPctAxis")
 p$yAxis(type = "addCategoryAxis", orderRule = "state")

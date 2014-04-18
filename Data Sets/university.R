@@ -35,6 +35,8 @@ levels(univ$school) = c("private", "public", "not enrolled")
 univ$age = gsub(".years", "", univ$age)
 univ$age = as.factor(univ$age)
 
+univtable = univ
+
 # Plot percentage below by state on state map
 univ = ddply(univ, .(state), transform,
             state_total = sum(freq))

@@ -2,7 +2,6 @@ library(acs)
 library(ggplot2)
 library(reshape2)
 library(plyr)
-library(dplyr)
 #B01001
 # ages 0-4, 5-9, 10-14, *15-19*, *20-24*, 25-29, 30-34, 35-39, 40-44, 45-49,
 # 50-54, 55-59, *60-64*, *65-69*, 70-74, 75-79, *80+*
@@ -37,7 +36,7 @@ agesex = data.frame(state = age.melt$state, gender = agecols$gender,
                      age = agecols$age, freq = age.melt$value)
 agesex$age = factor(agesex$age, levels(agesex$age)[c(18, 9, 1:8, 10:17)])
 levels(agesex$age) = gsub(".years", "", levels(agesex$age))
-
+agesextable = agesex
 # Add total
 agesex = ddply(agesex, .(state), transform,
                state_total = sum(freq))

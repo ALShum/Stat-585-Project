@@ -2,7 +2,6 @@ library(acs)
 library(ggplot2)
 library(reshape2)
 library(plyr)
-library(dplyr)
 library(stringr)
 library(rCharts)
 
@@ -77,7 +76,7 @@ emp = data.frame(state = employ.melt$state, gender = employcols$V1,
 emp$age = factor(emp$age)
 levels(emp$age) = gsub(".years", "", levels(emp$age))
 
-
+emptable = emp
 
 
 # Make new datasets

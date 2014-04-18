@@ -25,6 +25,7 @@ povertycols = ldply(strsplit(as.character(poverty.melt$variable), "\\.\\."))
 
 pov = data.frame(state = poverty.melt$state, level = povertycols$V1, 
                     household = povertycols$V2, education = povertycols$V3, freq = poverty.melt$value)
+povtable = pov
 
 # Plot percentage below by state on state map
 pov = ddply(pov, .(state), transform,

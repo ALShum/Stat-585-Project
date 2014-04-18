@@ -4,7 +4,6 @@ library(acs)
 library(ggplot2)
 library(reshape2)
 library(plyr)
-library(dplyr)
 
 #B27001 Health Insurance Coverage Status by Sex by Age
 states = geo.make(state = "*")
@@ -21,6 +20,7 @@ healthcols = ldply(strsplit(as.character(health.melt$variable), "\\.\\."))
 healthsex = data.frame(state = health.melt$state, gender = healthcols$V1, 
                  age = healthcols$V2, coverage = healthcols$V3, freq = health.melt$value)
 healthsex$age = factor(healthsex$age, levels(healthsex$age)[c(9,6,1:5,7,8)])
+healthsextable = healthsex
 
 #B27015 Health Insurance Coverage Status and Type by Household Income in the Past 12 Months
 states = geo.make(state = "*")
@@ -38,7 +38,7 @@ healthcols = ldply(strsplit(as.character(health.melt$variable), "\\.\\."))
 healthincome = data.frame(state = health.melt$state, income = healthcols$V1, 
                        coverage = healthcols$V2, freq = health.melt$value)
 healthincome$income = factor(healthincome$income, levels(healthincome$income)[c(5,2:4,1)])
-
+healthincometable = healthincome
 
 # Plot percentage insured by state on state map
 healthsex = ddply(healthsex, .(state), transform,
