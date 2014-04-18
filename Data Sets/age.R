@@ -37,6 +37,7 @@ agesex = data.frame(state = age.melt$state, gender = agecols$gender,
 agesex$age = factor(agesex$age, levels(agesex$age)[c(18, 9, 1:8, 10:17)])
 levels(agesex$age) = gsub(".years", "", levels(agesex$age))
 agesextable = agesex
+
 # Add total
 agesex = ddply(agesex, .(state), transform,
                state_total = sum(freq))
