@@ -3,7 +3,6 @@ library(ggplot2)
 library(reshape2)
 library(plyr)
 library(stringr)
-library(rCharts)
 
 #B23001 - Sex by Age by Employment Status for the Population 16 Years and over
 # age bracket 0-15, *16-24*, *25-34*, 35-44, 45-54, *55-64*, *65-74*, 75*
