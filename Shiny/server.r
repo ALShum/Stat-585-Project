@@ -1,32 +1,35 @@
 library(shiny)
 source("../Data Sets/age.R")
+source("../Data Sets/foodstamps.R")
+source("../Data Sets/health.R")
+source("../Data Sets/income.R")
+source("../Data Sets/jobs.R")
+source("../Data Sets/poverty.R")
+source("../Data Sets/university.R")
 
 shinyServer(function(input, output) {
   datasetInput <- reactive({
     # Fetch the appropriate data object, depending on the value
     # of input$dataset.
     switch(input$dataset,
-           "Age/Gender" = agesex,
-           "placeholder" = pressure)
+           "Age/Gender" = head(agesextable,10),
+           "Foodstamps" = head(foodtable,10),
+           "Health" = head(foodtable,10),
+           "Income" = head(foodtable,10),
+           "Jobs" = head(foodtable,10),
+           "Poverty" = head(foodtable,10),
+           "University" = head(foodtable,10))
   })
   
   output$table <- renderTable({
     datasetInput()
   })
   
-  # downloadHandler() takes two arguments, both functions.
-  # The content function is passed a filename as an argument, and
-  #   it should write out data to that filename.
   output$downloadData <- downloadHandler(
-    
-    # This function returns a string which tells the client
-    # browser what name to use when saving the file.
     filename = function() {
       paste(input$dataset, input$filetype, sep = ".")
     },
     
-    # This function should write data to a file given to it by
-    # the argument 'file'.
     content = function(file) {
       sep <- switch(input$filetype, "csv" = ",", "tsv" = "\t")
       
