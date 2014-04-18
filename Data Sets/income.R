@@ -16,6 +16,12 @@ names(med) = c('total','male_total','male_full','male_other',
                      'female_total','female_full','female_other')
 med$state = factor(rownames(med))
 rownames(med) = NULL
-medtable = med
+med = med[,c(3:4,6:8)]
+med.melt = subset(melt(med, id='state'))
+medcols = ldply(strsplit(as.character(med.melt$variable), "_"))
+medincome = data.frame(state = med.melt$state, income = med.melt$value, 
+                          gender = medcols$V1, part.full = medcols$V2)
+
+medincometable = medincome
 
 
