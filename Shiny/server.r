@@ -1,14 +1,38 @@
 library(shiny)
-library(acs)
+source("../Data Sets/age.R")
 
-shinyServer(function(input, output, session) {
-  
-  
-  output$mpgPlot <- renderPlot({
-    boxplot(as.formula(formulaText()), 
-            data = mpgData,
-            outline = input$outliers)
+shinyServer(function(input, output) {
+  datasetInput <- reactive({
+    # Fetch the appropriate data object, depending on the value
+    # of input$dataset.
+    switch(input$dataset,
+           "Age/Gender" = agesex,
+           "placeholder" = pressure)
   })
   
+  output$table <- renderTable({
+    datasetInput()
+  })
   
+  # downloadHandler() takes two arguments, both functions.
+  # The content function is passed a filename as an argument, and
+  #   it should write out data to that filename.
+  output$downloadData <- downloadHandler(
+    
+    # This function returns a string which tells the client
+    # browser what name to use when saving the file.
+    filename = function() {
+      paste(input$dataset, input$filetype, sep = ".")
+    },
+    
+    # This function should write data to a file given to it by
+    # the argument 'file'.
+    content = function(file) {
+      sep <- switch(input$filetype, "csv" = ",", "tsv" = "\t")
+      
+      # Write to a file specified by the 'file' argument
+      write.table(datasetInput(), file, sep = sep,
+                  row.names = FALSE)
+    }
+  )
 })
