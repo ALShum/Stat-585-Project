@@ -37,6 +37,7 @@ agesex = data.frame(state = age.melt$state, gender = agecols$gender,
 agesex$age = factor(agesex$age, levels(agesex$age)[c(18, 9, 1:8, 10:17)])
 levels(agesex$age) = gsub(".years", "", levels(agesex$age))
 agesextable = agesex
+<<<<<<< HEAD
 
 # Add total
 agesex = ddply(agesex, .(state), transform,
@@ -54,5 +55,7 @@ ggplot(data = subset(agesex, state=="Washington"), aes(x = age, y = freq, fill=g
   
 
 
+=======
+>>>>>>> c3b87c3aa4b1e5a6ac56eddb418fc13fdaa878ed
 
 
