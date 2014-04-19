@@ -29,5 +29,16 @@ qplot(freq/state_total, reorder(state, state_total),
       data=subset(emp, type == 'Employed'), 
       colour = gender, facets = ~age)
 
-#write.csv(emp,'emptotal.csv')
+library(rCharts)
+p = dPlot(x = "state", y = "freq", groups = "gender", data = subset(emp, type=="Unemployed"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
+
+p = dPlot(x = "state", y = "freq", groups = "age", data = subset(emp, type=="Employed"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
+
+
 
