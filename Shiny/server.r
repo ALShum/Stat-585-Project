@@ -1,11 +1,11 @@
 library(shiny)
 source("../Data Sets/age.R")
-source("../Data Sets/foodstamps.R")
-source("../Data Sets/health.R")
-source("../Data Sets/income.R")
-source("../Data Sets/jobs.R")
-source("../Data Sets/poverty.R")
-source("../Data Sets/university.R")
+#source("../Data Sets/foodstamps.R")
+#source("../Data Sets/health.R")
+#source("../Data Sets/income.R")
+#source("../Data Sets/jobs.R")
+#source("../Data Sets/poverty.R")
+#source("../Data Sets/university.R")
 
 shinyServer(function(input, output) {
   datasetInput <- reactive({
@@ -15,7 +15,7 @@ shinyServer(function(input, output) {
            "Age/Gender" = head(agesextable,10),
            "Foodstamps" = head(foodtable,10),
            "Health" = head(healthincometable,10),
-           "Income" = head(medtable,10),
+           "Income" = head(medincometable,10),
            "Jobs" = head(emptable,10),
            "Poverty" = head(povtable,10),
            "University" = head(univtable,10))
