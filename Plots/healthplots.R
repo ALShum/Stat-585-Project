@@ -29,6 +29,13 @@ p$xAxis(orderRule = "state")
 p$yAxis(type = "addPctAxis")
 p
 
+#rcharts
+library(rCharts)
+p = dPlot(x = "state", y = "freq", groups = "income", data = subset(healthincome, coverage=="private"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
+
 
 
 
