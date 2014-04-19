@@ -1,4 +1,5 @@
 source('../Data Sets/age.R')
+source('../Data Sets/health.R')
 
 # Add total
 agesex = ddply(agesex, .(state), transform,
@@ -9,10 +10,9 @@ ggplot(data = agesex, aes(x = age, y = freq, fill=gender)) +
   coord_flip() + geom_bar(subset = .(gender=="Female"), stat="identity") +
   geom_bar(subset = .(gender=="Male"), stat="identity", aes(y=-freq))
 
-# Pyramid plot filter by state
-ggplot(data = subset(agesex, state=="Washington"), aes(x = age, y = freq, fill=gender)) +
-  coord_flip() + geom_bar(subset = .(gender=="Female"), stat="identity") +
-  geom_bar(subset = .(gender=="Male"), stat="identity", aes(y=-freq))
-
-
-
+#rcharts
+library(rCharts)
+p = dPlot(x = "state", y = "freq", groups = "age", data = healthsex, type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p

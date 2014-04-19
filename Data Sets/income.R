@@ -19,8 +19,8 @@ rownames(med) = NULL
 med = med[,c(3:4,6:8)]
 med.melt = subset(melt(med, id='state'))
 medcols = ldply(strsplit(as.character(med.melt$variable), "_"))
-medincome = data.frame(state = med.melt$state, income = med.melt$value, 
-                          gender = medcols$V1, part.full = medcols$V2)
+medincome = data.frame(state = med.melt$state, gender = medcols$V1, 
+                       part.full = medcols$V2, income = med.melt$value)
 
 medincometable = medincome
 
