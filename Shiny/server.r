@@ -14,11 +14,11 @@ shinyServer(function(input, output) {
     switch(input$dataset,
            "Age/Gender" = head(agesextable,10),
            "Foodstamps" = head(foodtable,10),
-           "Health" = head(foodtable,10),
-           "Income" = head(foodtable,10),
-           "Jobs" = head(foodtable,10),
-           "Poverty" = head(foodtable,10),
-           "University" = head(foodtable,10))
+           "Health" = head(healthincometable,10),
+           "Income" = head(medtable,10),
+           "Jobs" = head(emptable,10),
+           "Poverty" = head(povtable,10),
+           "University" = head(univtable,10))
   })
   
   output$table <- renderTable({
