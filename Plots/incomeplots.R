@@ -1,18 +1,21 @@
 source('../Data Sets/income.R')
 
 
-med$region = tolower(med$state)
+medincome$region = tolower(med$state)
+medmalefull = subset(medincome,part.full == 'full' & gender == 'male')
+medmalefull$incomeind = '52,000 or more'
+medmalefull$incomeind[medmalefull$income < 52000] = '48,0000 - 52,000'
+medmalefull$incomeind[medmalefull$income < 48000] = '46,000 - 48,000'
+medmalefull$incomeind[medmalefull$income < 46000] = '46,000 or less'
+
 states <- map_data("state")
-medplot = merge(med,states,by='region')
+medplot = merge(medmalefull,states,by='region')
 
 # Plot median income
 qplot(long, lat, data=medplot, geom="polygon", order=order, 
-      group=group, fill = male_full)
-qplot(long, lat, data=medplot, geom="polygon", order=order, 
-      group=group, fill = female_full)
-
+      group=group, fill = incomeind)
 # Order of state plots
-qplot(male_full, reorder(state, male_full), data=med)
-qplot(female_full, reorder(state, female_full), data=med)
+qplot(income, reorder(state, income), 
+      data=medmalefull)
 
 
