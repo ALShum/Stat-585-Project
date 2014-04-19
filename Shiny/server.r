@@ -1,4 +1,5 @@
 library(shiny)
+library(rCharts)
 source("../Data Sets/age.R")
 source("../Data Sets/foodstamps.R")
 source("../Data Sets/health.R")
@@ -48,7 +49,10 @@ shinyServer(function(input, output) {
       plot = qplot(rgamma(100,10,5))
     }
     if(input$dataset == "Health") {
-      plot = NULL
+      p = dPlot(x = "state", y = "freq", groups = "age", data = healthsex, type = "bar")
+      p$xAxis(orderRule = "state")
+      p$yAxis(type = "addPctAxis")
+      plot = p
     }
     if(input$dataset == "Income") {
       plot = NULL
