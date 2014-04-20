@@ -79,4 +79,8 @@ total = combine_tables(total, other, `+`)
 total_pct = get_pct(total, 'total')
 
 food = rbind(white, latino, black, indian_pacific, asian, other)
-foodtable = food
+food.melt = melt(food[,-1], id = c("state", "race"))
+names(food.melt)[c(3,4)] = c("foodstamps", "freq")
+levels(food.melt) = c("yes", "no")
+
+foodtable = food.melt
