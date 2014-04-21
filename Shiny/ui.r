@@ -19,19 +19,15 @@ shinyUI(fluidPage(
 
     mainPanel(
       tabsetPanel(id="selectCategory",
-        tabPanel("Data Explorer"),
-        tabPanel("Graphics")
-      ), #tabsetPanel
+        tabPanel("Data Explorer",
+          dataTableOutput(outputId="table")
+        ), #tabPanel1
+        
+        tabPanel("Graphics", 
+          plotOutput("plot")
+        ) #tabPanel2
+      ) #tabsetPanel
       
-      conditionalPanel(condition = "input.selectCategory=='Data Explorer'",
-        tableOutput('table')
-      ), #conditionalPanel1
-
-      conditionalPanel(condition = "input.selectCategory=='Graphics'",
-        helpText("placeholder for datatableoutput"),
-        #dataTableOutput(outputId='table')
-        plotOutput("plot")  
-      ) #conditionalPanel2
     ) #mainPanel
   
   
