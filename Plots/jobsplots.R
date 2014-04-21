@@ -1,4 +1,4 @@
-source('../Data Sets/income.R')
+source('../Data Sets/jobs.R')
 
 
 # Make new datasets
@@ -35,7 +35,12 @@ p$xAxis(orderRule = "state")
 p$yAxis(type = "addPctAxis")
 p
 
-p = dPlot(x = "state", y = "freq", groups = "age", data = subset(emp, type=="Employed"), type = "bar")
+p = dPlot(x = "state", y = "freq", groups = "age", data = subset(emp, type=="In.Armed.Forces"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
+
+p = dPlot(x = "state", y = "freq", groups = "type", data = emp, type = "bar")
 p$xAxis(orderRule = "state")
 p$yAxis(type = "addPctAxis")
 p
