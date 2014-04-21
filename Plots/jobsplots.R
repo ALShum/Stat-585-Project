@@ -5,11 +5,9 @@ source('../Data Sets/jobs.R')
 emp = ddply(emp, .(state), transform,
             state_total = sum(freq))
 empage = ddply(emp, .(state, age, type), summarise, 
-               freq = sum(freq),
-               state_total = state_total)
+               freq = sum(freq))
 empgender = ddply(emp, .(state, gender, type), summarise, 
-                  freq = sum(freq),
-                  state_total = state_total)
+                  freq = sum(freq))
 
 # Filter by type ignore gender
 qplot(freq/state_total, reorder(state, state_total), 

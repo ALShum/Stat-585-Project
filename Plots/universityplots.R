@@ -5,22 +5,19 @@ source('../Data Sets/university.R')
 univ = ddply(univ, .(state), transform,
              state_total = sum(freq))
 univstate = ddply(univ, .(state,school), summarise,
-                  total = sum(freq),
-                  state_total = state_total)
+                  total = sum(freq))
 
 # Plot percentage below by state and gender
 univ = ddply(univ, .(state,gender), transform,
              state_total = sum(freq))
 univgender = ddply(univ, .(state, gender, school), summarise, 
-                   freq = sum(freq),
-                   state_total = state_total)
+                   freq = sum(freq))
 
 # Plot percentage below by state and age
 univ = ddply(univ, .(state,age), transform,
              state_total = sum(freq))
 univage = ddply(univ, .(state, age, school), summarise, 
-                freq = sum(freq),
-                state_total = state_total)
+                freq = sum(freq))
 
 #rcharts
 library(rCharts)

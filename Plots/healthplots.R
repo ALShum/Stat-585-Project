@@ -4,15 +4,13 @@ source('../Data Sets/health.R')
 healthsex = ddply(healthsex, .(state), transform,
                   state_total = sum(freq))
 healthstate = ddply(healthsex, .(state,coverage), summarise,
-                    total = sum(freq),
-                    state_total = state_total)
+                    total = sum(freq))
 
 # Plot percentage insured by state and age
 healthsex = ddply(healthsex, .(state,age), transform,
                   state_total = sum(freq))
 healthage = ddply(healthsex, .(state, age, coverage), summarise, 
-                  freq = sum(freq),
-                  state_total = state_total)
+                  freq = sum(freq))
 
 # Plot percentage insured by state and income
 healthincome = ddply(healthincome, .(state,income), transform,

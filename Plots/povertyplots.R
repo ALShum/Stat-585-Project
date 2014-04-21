@@ -13,15 +13,13 @@ povstate = ddply(povstate, .(state), transform,
 pov = ddply(pov, .(state,household), transform,
             state_total = sum(freq))
 povhouse = ddply(pov, .(state, household, level), summarise, 
-                 freq = sum(freq),
-                 state_total = state_total)
+                 freq = sum(freq))
 
 # Plot percentage below by state and education
 pov = ddply(pov, .(state,education), transform,
             state_total = sum(freq))
 poved = ddply(pov, .(state, education, level), summarise, 
-              freq = sum(freq),
-              state_total = state_total)
+              freq = sum(freq))
 
 povstate$region = tolower(povstate$state)
 povbelow = subset(povstate, level == 'below.poverty.level')
