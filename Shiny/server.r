@@ -1,12 +1,12 @@
 library(shiny)
 #library(rCharts)
-source("../Data Sets/age.R")
-source("../Data Sets/foodstamps.R")
-source("../Data Sets/health.R")
-source("../Data Sets/income.R")
-source("../Data Sets/jobs.R")
-source("../Data Sets/poverty.R")
-source("../Data Sets/university.R")
+source("../Plots/ageplots.R")
+source("../Plots/foodstampsplots.R")
+source("../Plots/healthplots.R")
+source("../Plots/incomeplots.R")
+source("../Plots/jobsplots.R")
+source("../Plots/povertyplots.R")
+source("../Plots/universityplots.R")
 
 shinyServer(function(input, output) {
   datasetInput <- reactive({
@@ -41,9 +41,7 @@ shinyServer(function(input, output) {
   
   output$plot <- renderPlot(function() {
     if(input$dataset == "AgeGender") {
-      plot = ggplot(data = agesextable, aes(x = age, y = freq, fill=gender)) +
-        coord_flip() + geom_bar(subset = .(gender=="Female"), stat="identity") +
-        geom_bar(subset = .(gender=="Male"), stat="identity", aes(y=-freq))
+      plot = pop.py
     }
     if(input$dataset == "Foodstamps") {
       plot = qplot(rgamma(100,10,5))
@@ -55,7 +53,8 @@ shinyServer(function(input, output) {
       #plot = p
     }
     if(input$dataset == "Income") {
-      plot = NULL
+      # Plot median income (male)
+      plot = plot.income.male
     }
     if(input$dataset == "Jobs") {
       plot = NULL
