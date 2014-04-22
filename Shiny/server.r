@@ -47,10 +47,10 @@ shinyServer(function(input, output) {
       plot = qplot(rgamma(100,10,5))
     }
     if(input$dataset == "Health") {
-      #p = dPlot(x = "state", y = "freq", groups = "age", data = healthsex, type = "bar")
-      #p$xAxis(orderRule = "state")
-      #p$yAxis(type = "addPctAxis")
-      #plot = p
+      p = dPlot(x = "state", y = "freq", groups = "age", data = healthsex, type = "bar")
+      p$xAxis(orderRule = "state")
+      p$yAxis(type = "addPctAxis")
+      plot = p
     }
     if(input$dataset == "Income") {
       # Plot median income (male)
@@ -65,7 +65,14 @@ shinyServer(function(input, output) {
     if(input$dataset == "University") {
       plot = NULL
     }   
-    print(plot)
-  }) #reactivePlot
+    print(plot) 
+  }) #renderPlot
 
+  output$plot2 <- renderChart2({
+    p = dPlot(x = "state", y = "freq", groups = "age", data = healthsex, type = "bar")
+    p$xAxis(orderRule = "state")
+    p$yAxis(type = "addPctAxis")
+    return(p)
+  })
+  
 }) #shinyserver
