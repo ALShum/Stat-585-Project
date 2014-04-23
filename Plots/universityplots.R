@@ -1,31 +1,33 @@
 source('../Data Sets/university.R')
 
-
-# Plot percentage below by state on state map
-univ = ddply(univ, .(state), transform,
-             state_total = sum(freq))
-univstate = ddply(univ, .(state,school), summarise,
+univpp = subset(univ, school != 'not enrolled')
+univstate = ddply(univpp, .(state,school), summarise,
                   total = sum(freq))
-
-# Plot percentage below by state and gender
-univ = ddply(univ, .(state,gender), transform,
-             state_total = sum(freq))
-univgender = ddply(univ, .(state, gender, school), summarise, 
-                   freq = sum(freq))
-
-# Plot percentage below by state and age
-univ = ddply(univ, .(state,age), transform,
-             state_total = sum(freq))
-univage = ddply(univ, .(state, age, school), summarise, 
-                freq = sum(freq))
-
-#rcharts
-library(rCharts)
-
-p = dPlot(x = "state", y = "freq", groups = "school", data = subset(univ, age=="18.to.24"), type = "bar")
-p$xAxis(orderRule = "state")
-p$yAxis(type = "addPctAxis")
-p
+univstate = ddply(univstate, .(state), transform,
+                  state_total = sum(total))
+univstate$percentage = univstate$total / univstate$state_total
+univstate$region = tolower(univstate$state)
+univstateprivate = subset(univstate, school == 'private')
+states <- map_data("state")
+univprivateplot = merge(univstateprivate,states,by='region')
+univprivateplot$percentageind = NULL
+univprivateplot$percentageind[univprivateplot$percentage <= .15 ] = '.15  and below'
+univprivateplot$percentageind[univprivateplot$percentage > .15 & univprivateplot$percentage <= .20 ] = '.15 - .20'
+univprivateplot$percentageind[univprivateplot$percentage > .20 & univprivateplot$percentage <= .25 ] = '.20 - .25'
+univprivateplot$percentageind[univprivateplot$percentage > .25 & univprivateplot$percentage <= .30 ] = '.25 - .30'
+univprivateplot$percentageind[univprivateplot$percentage > .30 & univprivateplot$percentage <= .40 ] = '.30 - .40'
+univprivateplot$percentageind[univprivateplot$percentage > .40 ] = '.40 and above'
 
 
+univprivplot = ggplot(univprivateplot, aes(long,lat)) + 
+  geom_polygon(aes(long, lat, order=order, fill=percentageind, group=group)) +
+  theme_bw() + coord_map() + 
+  theme(axis.ticks = element_blank(), 
+        axis.text.x = element_blank(), 
+        axis.title.x=element_blank(), 
+        axis.text.y = element_blank(), 
+        axis.title.y=element_blank(), 
+        panel.grid = element_blank(), 
+        panel.border = element_blank()) +
+  geom_path(aes(long, lat, order=order, group=group))
 
