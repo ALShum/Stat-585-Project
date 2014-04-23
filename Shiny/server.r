@@ -47,10 +47,6 @@ shinyServer(function(input, output) {
       plot = qplot(rgamma(100,10,5))
     }
     if(input$dataset == "Health") {
-      p = dPlot(x = "state", y = "freq", groups = "age", data = healthsex, type = "bar")
-      p$xAxis(orderRule = "state")
-      p$yAxis(type = "addPctAxis")
-      plot = p
       plot = NULL
     }
     if(input$dataset == "Income") {
@@ -74,6 +70,11 @@ shinyServer(function(input, output) {
     p$xAxis(orderRule = "state")
     p$yAxis(type = "addPctAxis")
     return(p)
+  })
+  
+  output$plot_income <-  renderPlot({
+    plot = plot.income.female
+    print(plot)
   })
   
   
