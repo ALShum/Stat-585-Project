@@ -39,7 +39,7 @@ shinyServer(function(input, output) {
                   row.names = FALSE)
     }) #download data
   
-  output$plot <- renderPlot(function() {
+  output$plot <- renderPlot({
     if(input$dataset == "AgeGender") {
       plot = pop.py
     }
@@ -51,6 +51,7 @@ shinyServer(function(input, output) {
       p$xAxis(orderRule = "state")
       p$yAxis(type = "addPctAxis")
       plot = p
+      plot = NULL
     }
     if(input$dataset == "Income") {
       # Plot median income (male)
@@ -74,5 +75,6 @@ shinyServer(function(input, output) {
     p$yAxis(type = "addPctAxis")
     return(p)
   })
+  
   
 }) #shinyserver
