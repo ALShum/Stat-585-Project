@@ -13,13 +13,13 @@ shinyServer(function(input, output) {
     # Fetch the appropriate data object, depending on the value
     # of input$dataset.
     switch(input$dataset,
-           "AgeGender" = head(agesextable,52),
-           "Foodstamps" = head(foodtable,52),
-           "Health" = head(healthincometable,52),
-           "Income" = head(medincometable,52),
-           "Jobs" = head(emptable,52),
-           "Poverty" = head(povtable,52),
-           "University" = head(univtable,52))
+           "AgeGender" = agesextable,
+           "Foodstamps" = foodtable,
+           "Health" = healthincometable,
+           "Income" = medincometable,
+           "Jobs" = emptable,
+           "Poverty" = povtable,
+           "University" = univtable)
   }) #datasetInput
   
   output$table <- renderDataTable({
