@@ -6,6 +6,7 @@ healthsex = ddply(healthsex, .(state), transform,
 healthstate = ddply(healthsex, .(state,coverage), summarise,
                     total = sum(freq))
 
+
 # Plot percentage insured by state and age
 healthsex = ddply(healthsex, .(state,age), transform,
                   state_total = sum(freq))
