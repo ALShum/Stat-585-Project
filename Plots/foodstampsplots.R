@@ -1,30 +1,36 @@
 source('../Data Sets/foodstamps.R')
 
-qplot(total, reorder(state, total), data=total_pct)
+foodtablestate = ddply(foodtable, .(state,foodstamps), summarise,
+                       total = sum(freq))
+foodtablestate = ddply(foodtablestate, .(state), transform,
+                       state_total = sum(total))
+foodtablestate$percentage = foodtablestate$total / foodtablestate$state_total
+
+foodtablestate$region = tolower(foodtablestate$state)
+foodstampsyes = subset(foodtablestate, foodstamps == 'yes')
+states <- map_data("state")
+foodplotstates = merge(foodstampsyes,states,by='region')
+foodplotstates$percentageind = NULL
+foodplotstates$percentageind[foodplotstates$percentage <= .08 ] = '.08  and below'
+foodplotstates$percentageind[foodplotstates$percentage > .08 & foodplotstates$percentage <= .10 ] = '.08 - .10'
+foodplotstates$percentageind[foodplotstates$percentage > .10 & foodplotstates$percentage <= .12 ] = '.10 - .12'
+foodplotstates$percentageind[foodplotstates$percentage > .12 & foodplotstates$percentage <= .14 ] = '.12 - .14'
+foodplotstates$percentageind[foodplotstates$percentage > .14 ] = '.14 and above'
 
 
-#rcharts
-library(rCharts)
-total.melt = melt(total, id = 'state')
-#food stamp by state
-p = dPlot(x = "state", y = "value", groups = "variable", data = subset(total.melt, variable != "total"), type = "bar")
-p$xAxis(orderRule = "state")
-p$yAxis(type = "addPctAxis")
-p
-
-#food stamp broken down by race
-final = rbind(white, latino, black, indian_pacific, asian, other)
-final.melt = melt(final, id=c('state', 'race'))
-p = dPlot(x = "state", y = "SNAP", groups = "race", data = final, type = "bar")
-p$xAxis(orderRule = "state")
-p$yAxis(type = "addPctAxis")
-p
+stampstateplot = ggplot(foodplotstates, aes(long,lat)) + 
+  geom_polygon(aes(long, lat, order=order, fill=percentageind, group=group)) +
+  theme_bw() + coord_map() + 
+  theme(axis.ticks = element_blank(), 
+        axis.text.x = element_blank(), 
+        axis.title.x=element_blank(), 
+        axis.text.y = element_blank(), 
+        axis.title.y=element_blank(), 
+        panel.grid = element_blank(), 
+        panel.border = element_blank()) +
+  geom_path(aes(long, lat, order=order, group=group))
 
 
-#same as above, flipped axis
 
-final.melt = melt(food, id=c('state', 'race'))
-p = dPlot(x = "SNAP", y = "state", groups = "race", data = final, type = "bar")
-p$xAxis(type = "addPctAxis")
-p$yAxis(type = "addCategoryAxis", orderRule = "state")
-p
+
+

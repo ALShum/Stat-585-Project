@@ -33,7 +33,7 @@ povplot$percentageind[povplot$percentage > .09 & povplot$percentage <= .11 ] = '
 povplot$percentageind[povplot$percentage > .11 & povplot$percentage <= .13 ] = '.11 - .13'
 povplot$percentageind[povplot$percentage > .13 ] = '.13 and above'
 
-# Plot median income
+# Plot pov income
 povstateplot = ggplot(povplot, aes(long,lat)) + 
   geom_polygon(aes(long, lat, order=order, fill=percentageind, group=group)) +
   theme_bw() + coord_map() + 
