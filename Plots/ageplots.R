@@ -15,4 +15,6 @@ library(rCharts)
 p = dPlot(x = "state", y = "freq", groups = "age", data = healthsex, type = "bar")
 p$xAxis(orderRule = "state")
 p$yAxis(type = "addPctAxis")
+p$addParams(width = 600, height = 300, dom = 'chart1',
+             title = "Percentage of age by state")
 p

@@ -39,7 +39,7 @@ plot.income.male = ggplot(medplot, aes(long,lat)) +
       geom_path(aes(long, lat, order=order, group=group))
 
 # Plot median income (female)
-ggplot(med2plot, aes(long,lat)) + 
+plot.income.female = ggplot(med2plot, aes(long,lat)) + 
   geom_polygon(aes(long, lat, order=order, fill=incomeind, group=group)) +
   theme_bw() + coord_map() + 
   theme(axis.ticks = element_blank(), 
