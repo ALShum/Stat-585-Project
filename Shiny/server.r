@@ -1,5 +1,5 @@
 library(shiny)
-#library(rCharts)
+library(rCharts)
 source("../Plots/ageplots.R")
 source("../Plots/foodstampsplots.R")
 source("../Plots/healthplots.R")
@@ -22,7 +22,7 @@ shinyServer(function(input, output) {
            "University" = head(univtable,52))
   }) #datasetInput
   
-  output$table <- renderTable({
+  output$table <- renderDataTable({
     datasetInput()
   }) #output - table
   

@@ -20,8 +20,8 @@ shinyUI(fluidPage(
     mainPanel(
       tabsetPanel(id="selectCategory",
         tabPanel("Data Explorer",
-          #dataTableOutput(outputId="table")
-          tableOutput("table")
+          dataTableOutput(outputId="table")
+          #tableOutput("table")
         ), #tabPanel1
         
         tabPanel("Graphics", 
