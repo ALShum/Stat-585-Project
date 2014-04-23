@@ -24,7 +24,8 @@ shinyUI(fluidPage(
           #tableOutput("table")
         ), #tabPanel1
         
-        tabPanel("Graphics", 
+        tabPanel("Graphics",
+          conditionalPanel()
           plotOutput("plot"),
           showOutput("plot2", "dimple")
         ) #tabPanel2

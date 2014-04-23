@@ -61,7 +61,7 @@ shinyServer(function(input, output) {
       plot = NULL
     }
     if(input$dataset == "Poverty") {
-      plot = NULL
+      plot = povstateplot
     }
     if(input$dataset == "University") {
       plot = NULL
