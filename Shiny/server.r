@@ -79,18 +79,32 @@ shinyServer(function(input, output) {
   }) #renderPlot plot3 
   
   output$poverty1 <- renderChart2({
-    p = dPlot(x = "state", y = "freq", groups = "education", data = subset(pov, level == "below.poverty.level"), type = "bar")
-    p$xAxis(orderRule = "state")
-    p$yAxis(type = "addPctAxis")
-    return(p)
+    return(povstateedu)
   }) #renderchart poverty1
   
   output$poverty2 <- renderChart2({
-    p = dPlot(x = "state", y = "freq", groups = "education", data = subset(pov, level == "at.or.above.poverty.level"), type = "bar")
-    p$xAxis(orderRule = "state")
-    p$yAxis(type = "addPctAxis")
-    return(p)
+    return(povstateedutotal)
   }) #renderchart poverty2
+  
+  output$food1 <- renderChart2({
+    return(foodstaterace)
+  }) #renderchart food1
+  
+  output$food2 <- renderChart2({
+    return(foodstateracetotal)
+  }) #renderchart food2
+  
+  output$health1 <- renderChart2({
+    return(privhealth.income)
+  }) #renderchart food2
+  
+  output$jobs1 <- renderChart2({
+    return(state.age.unemployed)
+  }) #renderchart food2
+  
+  output$jobs2 <- renderChart2({
+    return(type.age)
+  }) #renderchart food2
   
   
 }) #shinyserver
