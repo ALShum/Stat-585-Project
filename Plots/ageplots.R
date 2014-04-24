@@ -1,5 +1,4 @@
 source('../Data Sets/age.R')
-source('../Data Sets/health.R')
 
 # Add total
 agesex = ddply(agesex, .(state), transform,

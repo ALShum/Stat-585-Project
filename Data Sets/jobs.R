@@ -76,9 +76,3 @@ emp$age = factor(emp$age)
 levels(emp$age) = gsub(".years", "", levels(emp$age))
 
 emptable = emp
-
-
-
-
-
-

@@ -44,7 +44,7 @@ shinyServer(function(input, output) {
       plot = pop.py
     }
     if(input$dataset == "Foodstamps") {
-      plot = qplot(rgamma(100,10,5))
+      plot = stampstateplot
     }
     if(input$dataset == "Health") {
       plot = NULL
