@@ -47,19 +47,19 @@ shinyServer(function(input, output) {
       plot = stampstateplot
     }
     if(input$dataset == "Health") {
-      plot = NULL
+      plot = healthstateplot
     }
     if(input$dataset == "Income") {
       plot = plot.income.male
     }
     if(input$dataset == "Jobs") {
-      plot = NULL
+      plot = empstateplot
     }
     if(input$dataset == "Poverty") {
       plot = povstateplot
     }
     if(input$dataset == "University") {
-      plot = NULL
+      plot = univprivplot
     }   
     print(plot) 
   }) #renderPlot plot
