@@ -31,8 +31,7 @@ shinyUI(fluidPage(
           conditionalPanel(condition="input.dataset=='Income",
                            plotOutput("plot3")),
           conditionalPanel(condition="input.dataset=='Poverty'",
-                           showOutput("poverty1", "dimple"),
-                           showOutput("poverty2", "dimple"))
+                           showOutput("poverty1", "dimple"))
         ) #tabPanel2
       ) #tabsetPanel
       
