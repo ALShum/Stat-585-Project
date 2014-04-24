@@ -32,21 +32,19 @@ healthstateplot = ggplot(healthplotstates, aes(long,lat)) +
   geom_path(aes(long, lat, order=order, group=group))
 
 
-#rcharts
-library(rCharts)
-p = dPlot(x = "age", y = "freq", groups = "gender", 
+# without healthcare by age and sex
+nohealth.age.sex = dPlot(x = "age", y = "freq", groups = "gender", 
           data = subset(healthsex, coverage=="No"), type = "bar")
-p$xAxis(orderRule = "state")
-p$yAxis(type = "addPctAxis")
-p
+nohealth.age.sex$xAxis(orderRule = "state")
+nohealth.age.sex$yAxis(type = "addPctAxis")
+nohealth.age.sex
 
-#rcharts
-library(rCharts)
-p = dPlot(x = "state", y = "freq", groups = "income", 
+# private health care by state and income
+privhealth.income = dPlot(x = "state", y = "freq", groups = "income", 
           data = subset(healthincome, coverage=="private"), type = "bar")
-p$xAxis(orderRule = "state")
-p$yAxis(type = "addPctAxis")
-p
+privhealth.income$xAxis(orderRule = "state")
+privhealth.income$yAxis(type = "addPctAxis")
+privhealth.income
 
 
 

@@ -31,7 +31,19 @@ stampstateplot = ggplot(foodplotstates, aes(long,lat)) +
   ggtitle("Proportion of people on food stamps") + 
   geom_path(aes(long, lat, order=order, group=group))
 
+# foodstamps by state and race
+p = dPlot(x = "state", y = "freq", groups = "race", 
+          data = subset(foodtable, foodstamps == "yes"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
 
+# Totals by state and race
+p = dPlot(x = "state", y = "freq", groups = "race", 
+          data = foodtable, type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
 
 
 

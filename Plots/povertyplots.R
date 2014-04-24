@@ -20,7 +20,7 @@ povplot$percentageind[povplot$percentage > .09 & povplot$percentage <= .11 ] = '
 povplot$percentageind[povplot$percentage > .11 & povplot$percentage <= .13 ] = '.11 - .13'
 povplot$percentageind[povplot$percentage > .13 ] = '.13 and above'
 
-# Plot pov income
+# Plot pov by state
 povstateplot = ggplot(povplot, aes(long,lat)) + 
   geom_polygon(aes(long, lat, order=order, fill=percentageind, group=group)) +
   theme_bw() + coord_map() + 
@@ -34,14 +34,39 @@ povstateplot = ggplot(povplot, aes(long,lat)) +
   ggtitle("Percentage of people below the poverty line") + 
   geom_path(aes(long, lat, order=order, group=group))
 
-#education of people below poverty level
-#p = dPlot(x = "state", y = "freq", groups = "education", data = subset(pov, level == "below.poverty.level"), type = "bar")
-#p$xAxis(orderRule = "state")
-#p$yAxis(type = "addPctAxis")
-#p
+# below poverty level by state and household
+p = dPlot(x = "state", y = "freq", groups = "household", data = subset(pov, level == "below.poverty.level"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
 
-#education of people above poverty level
-#p = dPlot(x = "state", y = "freq", groups = "education", data = subset(pov, level == "at.or.above.poverty.level"), type = "bar")
-#p$xAxis(orderRule = "state")
-#p$yAxis(type = "addPctAxis")
-#p
+# Totals by state and household
+p = dPlot(x = "state", y = "freq", groups = "household", data = pov, type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
+
+## below poverty level by state and education
+p = dPlot(x = "state", y = "freq", groups = "education", data = subset(pov, level == "below.poverty.level"), type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
+
+## Totals by state and education
+p = dPlot(x = "state", y = "freq", groups = "education", data = pov, type = "bar")
+p$xAxis(orderRule = "state")
+p$yAxis(type = "addPctAxis")
+p
+
+### below poverty level by education and household
+p = dPlot(x = "household", y = "freq", groups = "education", data = subset(pov, level == "below.poverty.level"), type = "bar")
+p$xAxis(orderRule = "household")
+p$yAxis(type = "addPctAxis")
+p
+
+### Total by education and household
+p = dPlot(x = "household", y = "freq", groups = "education", data = pov, type = "bar")
+p$xAxis(orderRule = "household")
+p$yAxis(type = "addPctAxis")
+p
+

@@ -34,9 +34,21 @@ univprivplot = ggplot(univprivateplot, aes(long,lat)) +
         ggtitle("Enrollment in Private Universities") + 
   geom_path(aes(long, lat, order=order, group=group))
 
+# private schooling by state
+privuniv.state = dPlot(x = "state", y = "freq", groups = "school", data = subset(univ, school != "not enrolled"), type = "bar")
+privuniv.state$xAxis(orderRule = "state")
+privuniv.state$yAxis(type = "addPctAxis")
+privuniv.state
 
-#enrollment by age group - not interesting
-p = dPlot(x = "age", y = "freq", groups = "school", data = univ, type = "bar")
-p$xAxis(orderRule = "age")
-p$yAxis(type = "addPctAxis")
-p
+
+
+
+
+
+
+
+
+
+
+
+
