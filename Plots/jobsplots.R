@@ -1,6 +1,5 @@
 source('../Data Sets/jobs.R')
 
-
 # Make new datasets
 emp = ddply(emp, .(state), transform,
             state_total = sum(freq))

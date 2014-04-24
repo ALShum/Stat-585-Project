@@ -28,6 +28,7 @@ stampstateplot = ggplot(foodplotstates, aes(long,lat)) +
         axis.title.y=element_blank(), 
         panel.grid = element_blank(), 
         panel.border = element_blank()) +
+  ggtitle("Proportion of people on food stamps") + 
   geom_path(aes(long, lat, order=order, group=group))
 
 

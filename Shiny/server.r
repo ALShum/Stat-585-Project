@@ -50,7 +50,6 @@ shinyServer(function(input, output) {
       plot = NULL
     }
     if(input$dataset == "Income") {
-      # Plot median income (male)
       plot = plot.income.male
     }
     if(input$dataset == "Jobs") {
@@ -63,19 +62,35 @@ shinyServer(function(input, output) {
       plot = NULL
     }   
     print(plot) 
-  }) #renderPlot
+  }) #renderPlot plot
 
-  output$plot2 <- renderChart2({
-    p = dPlot(x = "state", y = "freq", groups = "age", data = healthsex, type = "bar")
+  output$plot2 <- renderPlot({
+    if(input$dataset == "Income") {
+      plot = plot.income.female
+    }
+    print(plot)
+  }) #renderPlot plot2
+  
+  output$plot3 <- renderPlot({
+    if(input$dataset == "Income") {
+      plot = incomerank
+    }
+    print(plot)
+  }) #renderPlot plot3 
+  
+  output$poverty1 <- renderChart2({
+    p = dPlot(x = "state", y = "freq", groups = "education", data = subset(pov, level == "below.poverty.level"), type = "bar")
     p$xAxis(orderRule = "state")
     p$yAxis(type = "addPctAxis")
     return(p)
-  })
+  }) #renderchart poverty1
   
-  output$plot_income <-  renderPlot({
-    plot = plot.income.female
-    print(plot)
-  })
+  output$poverty2 <- renderChart2({
+    p = dPlot(x = "state", y = "freq", groups = "education", data = subset(pov, level == "at.or.above.poverty.level"), type = "bar")
+    p$xAxis(orderRule = "state")
+    p$yAxis(type = "addPctAxis")
+    return(p)
+  }) #renderchart poverty2
   
   
 }) #shinyserver

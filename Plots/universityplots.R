@@ -1,5 +1,7 @@
 source('../Data Sets/university.R')
 
+
+
 univpp = subset(univ, school != 'not enrolled')
 univstate = ddply(univpp, .(state,school), summarise,
                   total = sum(freq))
@@ -29,5 +31,12 @@ univprivplot = ggplot(univprivateplot, aes(long,lat)) +
         axis.title.y=element_blank(), 
         panel.grid = element_blank(), 
         panel.border = element_blank()) +
+        ggtitle("Enrollment in Private Universities") + 
   geom_path(aes(long, lat, order=order, group=group))
 
+
+#enrollment by age group - not interesting
+p = dPlot(x = "age", y = "freq", groups = "school", data = univ, type = "bar")
+p$xAxis(orderRule = "age")
+p$yAxis(type = "addPctAxis")
+p

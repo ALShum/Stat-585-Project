@@ -53,7 +53,7 @@ plot.income.female = ggplot(med2plot, aes(long,lat)) +
   geom_path(aes(long, lat, order=order, group=group))
 
 # Order of state plots
-qplot(income, reorder(state, income), 
-      data=medmalefull)
+incomerank = qplot(income, reorder(state, income), 
+                   data=subset(medmalefull,state!="Puerto Rico"))
 
 
