@@ -30,17 +30,16 @@ empstateplot = ggplot(empplotstates, aes(long,lat)) +
   ggtitle("Proportion of people unemployed") + 
   geom_path(aes(long, lat, order=order, group=group))
 
-
-library(rCharts)
-state.age.unemployed = dPlot(x = "state", y = "freq", groups = "age", data = subset(emp, type=="Unemployed"), type = "bar")
+state.age.unemployed = dPlot(x = "state", y = "freq", groups = "age", 
+                             data = subset(emp, type=="Unemployed"), type = "bar")
 state.age.unemployed$xAxis(orderRule = "state")
 state.age.unemployed$yAxis(type = "addPctAxis")
-state.age.unemployed
+
 
 type.age = dPlot(x = "type", y = "freq", groups = "age", data = emp, type = "bar")
 type.age$xAxis(orderRule = "type")
 type.age$yAxis(type = "addPctAxis")
-type.age
+
 
 
 

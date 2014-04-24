@@ -31,20 +31,12 @@ healthstateplot = ggplot(healthplotstates, aes(long,lat)) +
   ggtitle("Proportion of people without health care") + 
   geom_path(aes(long, lat, order=order, group=group))
 
-
-# without healthcare by age and sex
-nohealth.age.sex = dPlot(x = "age", y = "freq", groups = "gender", 
-          data = subset(healthsex, coverage=="No"), type = "bar")
-nohealth.age.sex$xAxis(orderRule = "state")
-nohealth.age.sex$yAxis(type = "addPctAxis")
-nohealth.age.sex
-
 # private health care by state and income
 privhealth.income = dPlot(x = "state", y = "freq", groups = "income", 
           data = subset(healthincome, coverage=="private"), type = "bar")
 privhealth.income$xAxis(orderRule = "state")
 privhealth.income$yAxis(type = "addPctAxis")
-privhealth.income
+
 
 
 

@@ -32,18 +32,16 @@ stampstateplot = ggplot(foodplotstates, aes(long,lat)) +
   geom_path(aes(long, lat, order=order, group=group))
 
 # foodstamps by state and race
-p = dPlot(x = "state", y = "freq", groups = "race", 
-          data = subset(foodtable, foodstamps == "yes"), type = "bar")
-p$xAxis(orderRule = "state")
-p$yAxis(type = "addPctAxis")
-p
+foodstaterace = dPlot(x = "state", y = "freq", groups = "race", data = subset(foodtable, foodstamps == "yes"), type = "bar")
+foodstaterace$xAxis(orderRule = "state")
+foodstaterace$yAxis(type = "addPctAxis")
+
 
 # Totals by state and race
-p = dPlot(x = "state", y = "freq", groups = "race", 
-          data = foodtable, type = "bar")
-p$xAxis(orderRule = "state")
-p$yAxis(type = "addPctAxis")
-p
+foodstateracetotal = dPlot(x = "state", y = "freq", groups = "race", data = foodtable, type = "bar")
+foodstateracetotal$xAxis(orderRule = "state")
+foodstateracetotal$yAxis(type = "addPctAxis")
+
 
 
 

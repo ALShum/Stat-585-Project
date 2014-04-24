@@ -1,7 +1,5 @@
 source('../Data Sets/university.R')
 
-
-
 univpp = subset(univ, school != 'not enrolled')
 univstate = ddply(univpp, .(state,school), summarise,
                   total = sum(freq))
@@ -12,6 +10,7 @@ univstate$region = tolower(univstate$state)
 univstateprivate = subset(univstate, school == 'private')
 states <- map_data("state")
 univprivateplot = merge(univstateprivate,states,by='region')
+
 univprivateplot$percentageind = NULL
 univprivateplot$percentageind[univprivateplot$percentage <= .15 ] = '.15  and below'
 univprivateplot$percentageind[univprivateplot$percentage > .15 & univprivateplot$percentage <= .20 ] = '.15 - .20'
@@ -38,7 +37,7 @@ univprivplot = ggplot(univprivateplot, aes(long,lat)) +
 privuniv.state = dPlot(x = "state", y = "freq", groups = "school", data = subset(univ, school != "not enrolled"), type = "bar")
 privuniv.state$xAxis(orderRule = "state")
 privuniv.state$yAxis(type = "addPctAxis")
-privuniv.state
+
 
 
 
