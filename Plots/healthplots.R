@@ -1,36 +1,49 @@
 source('../Data Sets/health.R')
 
-# Plot percentage insured by state on state map
-healthsex = ddply(healthsex, .(state), transform,
-                  state_total = sum(freq))
 healthstate = ddply(healthsex, .(state,coverage), summarise,
-                    total = sum(freq))
+                       total = sum(freq))
+healthstate = ddply(healthstate, .(state), transform,
+                       state_total = sum(total))
+healthstate$percentage = healthstate$total / healthstate$state_total
+
+healthstate$region = tolower(healthstate$state)
+healthno = subset(healthstate, coverage == 'No')
+states <- map_data("state")
+healthplotstates = merge(healthno,states,by='region')
+healthplotstates$percentageind = NULL
+healthplotstates$percentageind[healthplotstates$percentage <= .09 ] = '.09  and below'
+healthplotstates$percentageind[healthplotstates$percentage > .09 & healthplotstates$percentage <= .12 ] = '.09 - .12' 
+healthplotstates$percentageind[healthplotstates$percentage > .12 & healthplotstates$percentage <= .15 ] = '.12 - .15' 
+healthplotstates$percentageind[healthplotstates$percentage > .15 & healthplotstates$percentage <= .18 ] = '.15 - .18' 
+healthplotstates$percentageind[healthplotstates$percentage > .18 ] = '.18 and above'
 
 
-# Plot percentage insured by state and age
-healthsex = ddply(healthsex, .(state,age), transform,
-                  state_total = sum(freq))
-healthage = ddply(healthsex, .(state, age, coverage), summarise, 
-                  freq = sum(freq))
-
-# Plot percentage insured by state and income
-healthincome = ddply(healthincome, .(state,income), transform,
-                     state_total = sum(freq))
-
-qplot(freq/state_total, reorder(state, state_total), 
-      data=healthage, colour = age,  facets = ~coverage)
+healthstateplot = ggplot(healthplotstates, aes(long,lat)) + 
+  geom_polygon(aes(long, lat, order=order, fill=percentageind, group=group)) +
+  theme_bw() + coord_map() + 
+  theme(axis.ticks = element_blank(), 
+        axis.text.x = element_blank(), 
+        axis.title.x=element_blank(), 
+        axis.text.y = element_blank(), 
+        axis.title.y=element_blank(), 
+        panel.grid = element_blank(), 
+        panel.border = element_blank()) +
+  ggtitle("Proportion of people without health care") + 
+  geom_path(aes(long, lat, order=order, group=group))
 
 
 #rcharts
 library(rCharts)
-p = dPlot(x = "state", y = "freq", groups = "age", data = subset(healthsex, coverage=="No"), type = "bar")
+p = dPlot(x = "age", y = "freq", groups = "gender", 
+          data = subset(healthsex, coverage=="No"), type = "bar")
 p$xAxis(orderRule = "state")
 p$yAxis(type = "addPctAxis")
 p
 
 #rcharts
 library(rCharts)
-p = dPlot(x = "state", y = "freq", groups = "income", data = subset(healthincome, coverage=="private"), type = "bar")
+p = dPlot(x = "state", y = "freq", groups = "income", 
+          data = subset(healthincome, coverage=="private"), type = "bar")
 p$xAxis(orderRule = "state")
 p$yAxis(type = "addPctAxis")
 p

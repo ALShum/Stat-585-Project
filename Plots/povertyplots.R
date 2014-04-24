@@ -8,18 +8,6 @@ povstate = ddply(pov, .(state,level), summarise,
 povstate = ddply(povstate, .(state), transform,
                  state_total = sum(total))
 
-# Plot percentage below by state and household
-pov = ddply(pov, .(state,household), transform,
-            state_total = sum(freq))
-povhouse = ddply(pov, .(state, household, level), summarise, 
-                 freq = sum(freq))
-
-# Plot percentage below by state and education
-pov = ddply(pov, .(state,education), transform,
-            state_total = sum(freq))
-poved = ddply(pov, .(state, education, level), summarise, 
-              freq = sum(freq))
-
 povstate$region = tolower(povstate$state)
 povbelow = subset(povstate, level == 'below.poverty.level')
 states <- map_data("state")
@@ -52,7 +40,7 @@ povstateplot = ggplot(povplot, aes(long,lat)) +
 #p$yAxis(type = "addPctAxis")
 #p
 
-#education of people above povery level
+#education of people above poverty level
 #p = dPlot(x = "state", y = "freq", groups = "education", data = subset(pov, level == "at.or.above.poverty.level"), type = "bar")
 #p$xAxis(orderRule = "state")
 #p$yAxis(type = "addPctAxis")
