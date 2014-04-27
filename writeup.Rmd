@@ -1,5 +1,10 @@
-Introduction
+Bringing the Census Bureau Data to you
 ========================================================
+
+Authors: Jim Curro and Alex Shum
+
+Introduction
+--------------------
 The American Community Survey (ACS) is a yearly demographic survey given to a subset of US households.  There are a few different methods the public can use to access data from the ACS.  One method is using Easystats http://www.census.gov/easystats/ which displays data tables for a few selected categories of variables.  The variables available from http://www.census.gov/easystats/ are a small subset of all available variables from the American Community Survey and the main goal of Easystats is to give a small example of the type of data available using from the American Community Survey that is easy to access.  The main problem with Easystats is that the data is not presented in a tidy format and we feel there are more interesting examples of the type of data available from the ACS.
 
 The Census Bureau also has an online API that allows access to a larger portion of ACS.  Using the 2012 5-year summaries we collected demographic variables we feel were more interesting and formatted them into a tidy format.  We present the data in a shiny app and give some simple graphic summaries of the data and allow the data to be downloaded by the user.  The different demographic variables available include age, sex, median income, food stamps status, healthcare, employment, poverty status, and university enrollment for each state.
@@ -7,7 +12,7 @@ The Census Bureau also has an online API that allows access to a larger portion 
 Our Shiny app has some simple graphical summaries of our demographic variables using ggplot and rCharts.  The main purpose is simply to show some examples of the type of demographic data available and what can be done with the data as presented.  If the user wants to use the data for analytic purposes then the data is available to download in a tidied format. 
 
 Cleaning
-========================================================
+--------------------
 Data is accessed from the Census Bureau's online API using the acs package in R.  The ACS dataset from the online API can be accessed for state, county, census tract or other geographic regions.  Our shiny app accesses demographic variables from the ACS by state.  The data from its original form from the ACS is not in a tidy format.   In a tidy format the rows of the dataset are observations and the columns are variables.  The data from the ACS has columns that store categorical information.  The following is a subset of one of the variables available from our shiny app:
 
 ```{r}
@@ -66,7 +71,7 @@ The Census Bureau's online API also gives access to margin of errors but this wa
 The dataset in the final tidy format is what was released to the users who use our shiny application.  We wanted users to be able to look at a few selected interesting variables in a tidy format without deep knowledge of the ACS, programming skills and knowledge of the Census Bureau's online API.
 
 Shiny
-========================================================
+--------------------
 Our shiny application consists of two main parts: data explorer and graphical summaries.  The data explorer displays the dataset with options to filter by variable and the option to download the dataset as a CSV.  The graphical summaries are examples of what can be done with the tidied dataset. 
 
 The Data Explorer allows users to see the data set in a tidy format and gives them the ability to select the number of rows to display and sort the data using any of the variables.  It also allows users to filter what rows they are looking at based on different categorical variables shown at the bottom of the table.  From this view the user can also download the entire table as a .csv or .tsv allowing them to perform their own analytics on the data set.
@@ -78,7 +83,17 @@ Shiny allows graphics from many different libraries.  It is possible to use grap
 Part of the challenge for building the shiny application was integrating both ggplot2 and rCharts.  It was a bit difficult to integrate the two since they used different functions in shiny to display the plots.  Additionally, we used conditionalPanels to display different plots for different datasets and we discovered that conditionalPanels were buggy.  One strange bug we discovered was that the ordering of conditionalPanels mattered.  We had conditionalPanels that displayed rCharts and conditionalPanels that displayed ggplots.  If our conditionalPanels for rCharts came after the conditionalPanels for ggplots then we had a bug where the conditionalPanels were not evaluating the conditions properly.  However, if we put the conditionalPanels for rCharts before the conditionalPanels for ggplot then the conditions were properly triggered.
 
 Future work
-========================================================
+--------------------
 There are many different aspects of this project that we wish to expand upon and continue doing work and perhaps present at the data expo.  It would be nice if we keep looking at different tables with acs.lookup to try and eventually come up with a function that can work for any table and produce a tidy dataset.  Most likely that dataset will have certain columns that are not useful and extra rows that correspond to totals.  However, it would be much easier to simply filter those out instead of starting from scratch every time you want to look at a new table.
 
 A lot of the different work that we want to keep developing has to do with shiny.  For example having a better way for users to examine the table of data and get a better feel for what is going on.  Also we want to have more interactive graphics within a particular dataset allowing users to subset on state, gender, age, etc.  and producing plots for each of those.  This will allow users to more easily see differences between certain categorical variables which as of now we can not display from our shiny application.
+
+Work breakdown
+--------------------
+
+Jim - Did most of the cleaning in terms of the "easier" datasets to tidy up.  By doing this we mean a few more datasets making tidy, but none of the datasets that had to be merged together by race which took more in depth work.  Also more of the work that went into plots in terms of data manipulation and examining what would be the best visually for shiny.  
+
+Alex - Cleaned up the more in depth datasets that were used writing functions that helped merge tables of similar interest.  Did a lot of implementing the shiny server dealing with a lot of issues in terms of dealing with animint and rcharts in shiny.  Also helped in the graphical displays making sure that the format of graphs were correct and useful for what we wanted to show.
+
+Both - When working on project were typically together in stages figuring out what the next step would be and breaking down what the aim of our project was.  For example what datasets we wanted to use from the ACS, the specific ui of shiny, and what graphics we should display to the user from everything that was made.
+
